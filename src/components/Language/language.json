@@ -1,0 +1,29 @@
+{
+    "nav": {
+        "title": {
+            "es": "MiPortfolio",
+            "en": "MyPorfolio"
+        },
+        "home": {
+            "es": "Inicio",
+            "en": "Home"
+        },
+        "contact":{
+            "es": "Contacto",
+            "en": "Contact"
+        },
+        "experience":{
+            "es": "Experiencia",
+            "en": "Experience"
+        },
+        "skillSet":{
+            "es": "Tecnologías",
+            "en": "Skill Set"
+        },
+        "language":{
+            "es": ["Idioma", "Español", "Inglés"],
+            "en": ["Language","Spanish", "English"]
+        }    
+    }
+
+}

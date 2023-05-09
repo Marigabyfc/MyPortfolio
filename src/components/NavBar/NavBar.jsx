@@ -1,36 +1,42 @@
 import Style from './NavBar.module.css'
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import TranslateIcon from '@mui/icons-material/Translate';
+import {nav} from '../Language/language.json'
+import { useClick } from '../Hooks/useClick';
+
 
 export default function NavBar() {
 
-  const [clicked, setClicked] = useState(false);
+  const [active, clicked] = useClick(false)
 
-  const handleClicked = (e) =>{
-    setClicked(!clicked)
-  }
 
   return (
-    <div>
-      <nav className={Style.navBar} >
-        <h2>MyPortfolio</h2>
-        <div  className={clicked ? Style.active : Style.divSpanNavBar}>
-        <Link to='/' onClick={(e)=> handleClicked(e)}><span>Home</span></Link>
-        <hr />
-        <Link to='/contact' onClick={(e)=> handleClicked(e)}><span>Contact</span></Link>
-        <hr />
-        <Link to='/experience' onClick={(e)=> handleClicked(e)}><span>Experience</span></Link>
-        <hr />
-        <Link to='/skillSet' onClick={(e)=> handleClicked(e)}><span>Skill Set</span></Link>
-        </div>
+    <header>
+      <nav className={Style.navBar}>
+      <h2>MyPortfolio</h2>
+        <ul  className={active ? Style.active : Style.ulNavBar}>
+          <Link to='/' onClick={clicked}><li>Home</li></Link>
+          <Link to='/contact' onClick={clicked}><li>Contact</li></Link>
+          <Link to='/experience' onClick={clicked}><li>Experience</li></Link>
+          <Link to='/skillSet' onClick={clicked}><li>Skill Set</li></Link>
+        </ul>   
+          <div className={Style.selectLanguage}>
+            <TranslateIcon className={Style.icon}/>
+              <select name="language" className={Style.firstSelect}>
+                <option value="Language" disabled>{nav.language.en[0]}</option>
+                <option value="es">{nav.language.en[2]}</option>
+                <option value="en">{nav.language.en[1]}</option>
+              </select>
+          </div>    
         <div className={Style.menu}>
-          <button onClick={(e)=>handleClicked(e)}>
+          <button onClick={clicked}>
             <div></div>
             <div></div>
             <div></div>
           </button>
         </div>
       </nav>      
-    </div>
+    </header>
   )
-}
+};

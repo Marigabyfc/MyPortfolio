@@ -1,0 +1,21 @@
+.projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects figure{
+    margin-top: 12rem;
+}
+
+.projects img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 5px #888888;
+}
+
+@media screen and (max-width: 985px){
+
+    .projects{
+        flex-direction: column;
+       }
+}

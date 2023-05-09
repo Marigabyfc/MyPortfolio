@@ -10,16 +10,60 @@
     position: fixed;
 } 
 
-/* .divSpanNavBar{
-    transition: all 1s ease;
-} */
+.ulNavBar{
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   width: 60%;
+}
 
-.divSpanNavBar hr{
+.ulNavBar hr{
     display: none;
+}
+
+
+.active{
+    display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 60%;   
+}
+
+.active li{
+    padding: 1em;
+    color: #f3a7cb;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.selectLanguage {
+    display: flex;
+    align-items: center;
+}
+
+.firstSelect option{
+    color: black;
+}
+
+.firstSelect :first-child{
+    color: #f3a7cb;
+}
+
+.selectLanguage select{
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    height: 2em;
+    color: #f3a7cb;
+}
+
+.icon{
+    color: #f3a7cb;
 }
 
 .navBar h2{
     color: #ffe8e8;
+    margin-left: 5vw;
 }
 
 .menu button{
@@ -27,27 +71,26 @@
     border: none;
 }
 
-.divSpanNavBar span{
+.ulNavBar li{
     padding: 1em;
     color: #f3a7cb;
     font-weight: 600;
     font-size: medium;
-    margin-right: 1rem;
 }
 
-.divSpanNavBar span:hover{
+.ulNavBar li:hover{
     background-color: #69225a;
     transition: 0.5s;
     border-radius: 50%;
 }
 
-.divSpanNavBar span:active {
+.ulNavBar li:active {
     box-shadow: 2px 2px 5px #FFBABA;
 }
 
-@media screen and (max-width: 730px) {
-    .navBar span{
-        font-size: 1em;
+@media screen and (max-width: 770px) {
+    .navBar li{
+        font-size: 12px;
     }  
 }
 
@@ -60,7 +103,11 @@
         border-radius: 10px;
     }
 
-    .divSpanNavBar{
+    .icon{
+        display: none;
+    }
+
+    .ulNavBar{
         display: none;
     }
 
@@ -88,7 +135,7 @@
         height: calc(100% - 5rem);
     }
 
-    .active span{
+    .active li{
         line-height: 4rem;
         color: #ffffff;
         font-size: 1.5rem;
@@ -97,11 +144,11 @@
 }
 
 /* @media screen and (max-width: 858px) and (orientation: landscape){
-    .divSpanNavBar span{
+    .ulNavBar span{
         margin: 5px 0 0 0;
     }
 
-    .divSpanNavBar{
+    .ulNavBar{
         overflow: scroll;
         height: calc(100px - 65px);
     }
