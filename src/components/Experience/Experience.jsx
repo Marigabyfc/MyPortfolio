@@ -1,11 +1,12 @@
 import Style from './Experience.module.css'
 import React from 'react'
+import image from '../../images/MarigabyFoods.jpeg'
 
 export default function Experience() {
+
   return (
-    <div>
-      <h2>ESTOY EN EXPERIENCE</h2>
-      <div className={Style.pruebita}></div>
+    <div className={Style.pruebita}>
+       <h3>HOLA</h3>
     </div>
   )
 }

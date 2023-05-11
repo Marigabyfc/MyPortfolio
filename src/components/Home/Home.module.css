@@ -1,21 +1,129 @@
-.projects{
+
+.projects {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
 }
+
+.projects h1 {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 3px #333;
+    padding: 2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.divProjects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 5rem; */
+}
+
 
 .projects figure{
-    margin-top: 12rem;
-}
-
-.projects img{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px 5px #888888;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer ;
 }
 
-@media screen and (max-width: 985px){
+.projects figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
 
-    .projects{
+.projects figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 30, 123, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.projects figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.projects figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px ;
+}
+
+.projects figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin: 30px;
+}
+
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+.projects button{
+    margin-top: 2rem;
+    height: 30px;
+    border-radius: 30px;
+    width: 30%;
+    background-color: transparent;
+    border-color: #C85C8E;
+}
+
+
+.projects button:hover{
+    background-color: #C85C8E;
+    transition: 0.5s;
+    color: aliceblue;
+    animation-name: swing;
+    -webkit-animation-name: swing;
+    -moz-animation-name: swing;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+}
+
+    @keyframes swing {
+        20% {transform: rotate3d(0, 0, 1, 15deg);}
+        40% {transform: rotate3d(0, 0, 1, -10deg);}
+        60% {transform: rotate3d(0, 0, 1, 5deg);}
+        80% {transform: rotate3d(0, 0, 1, -5deg);}
+        to  {transform: rotate3d(0, 0, 1, 0deg);}
+    }
+
+
+
+
+
+@media screen and (max-width: 1000px){
+
+    .container{
         flex-direction: column;
        }
 }
