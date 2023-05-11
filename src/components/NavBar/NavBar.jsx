@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 import TranslateIcon from '@mui/icons-material/Translate';
 import {nav} from '../Language/language.json'
 import { useClick } from '../Hooks/useClick';
+import { useModal } from '../Hooks/useModal';
 
 
 export default function NavBar() {
 
   const [active, clicked] = useClick(false)
-
 
   return (
     <header>

@@ -8,6 +8,8 @@
     align-items: center;
     width: 100%;
     position: fixed;
+    text-shadow: 1px 1px 3px #333;
+    z-index: 99;
 } 
 
 .ulNavBar{
@@ -24,16 +26,16 @@
 
 .active{
     display: flex;
-        justify-content: flex-end;
-        list-style: none;
-        width: 60%;   
+    justify-content: flex-end;
+    list-style: none;
+    width: 60%;   
 }
 
 .active li{
     padding: 1em;
     color: #f3a7cb;
     font-weight: 600;
-    font-size: medium;
+    font-size: large;
 }
 
 .selectLanguage {
@@ -55,6 +57,7 @@
     text-align: center;
     height: 2em;
     color: #f3a7cb;
+    font-size: medium;
 }
 
 .icon{
@@ -64,6 +67,7 @@
 .navBar h2{
     color: #ffe8e8;
     margin-left: 5vw;
+    font-size: xx-large;
 }
 
 .menu button{
@@ -75,7 +79,7 @@
     padding: 1em;
     color: #f3a7cb;
     font-weight: 600;
-    font-size: medium;
+    font-size: large;
 }
 
 .ulNavBar li:hover{
