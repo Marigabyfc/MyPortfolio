@@ -1,7 +1,7 @@
 .navBar{
-    height: 5rem;
-    background-color: #7B2869;
-    border-bottom: 1px solid #C85C8E;
+    height: 4.5rem;
+    background: #333;
+    border-bottom: solid 2px rgb(123, 56, 161);
     box-shadow: 5px 0 10px black;
     justify-content: space-around;
     display: flex;
@@ -23,21 +23,6 @@
     display: none;
 }
 
-
-.active{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    width: 60%;   
-}
-
-.active li{
-    padding: 1em;
-    color: #f3a7cb;
-    font-weight: 600;
-    font-size: large;
-}
-
 .selectLanguage {
     display: flex;
     align-items: center;
@@ -56,12 +41,12 @@
     border-radius: 30px;
     text-align: center;
     height: 2em;
-    color: #f3a7cb;
+    color: #ffe8e8;
     font-size: medium;
 }
 
 .icon{
-    color: #f3a7cb;
+    color: #ffe8e8;
 }
 
 .navBar h2{
@@ -71,40 +56,55 @@
 }
 
 .menu button{
-    background-color: transparent;
+    background: #333;
+    /* background-color: transparent; */
     border: none;
 }
 
 .ulNavBar li{
     padding: 1em;
-    color: #f3a7cb;
-    font-weight: 600;
-    font-size: large;
+    color: #ffe8e8;
+    font-size: larger;
 }
 
 .ulNavBar li:hover{
-    background-color: #69225a;
-    transition: 0.5s;
+    background-color:rgb(123, 56, 161);
+    /* background: -webkit-linear-gradient(bottom right, rgb(68, 151, 199, 0.5), rgb(123, 56, 161, 0.5), rgb(212, 78, 73, 0.5)); */
+    transition: 1s;
+    opacity: 0;
     border-radius: 50%;
 }
 
-.ulNavBar li:active {
-    box-shadow: 2px 2px 5px #FFBABA;
-}
 
 @media screen and (max-width: 770px) {
     .navBar li{
-        font-size: 12px;
+        font-size: 16px;
     }  
+
+    .navBar img{
+        padding-left: 1rem;
+    }
+
+    .ulNavBar li{
+        padding-left: 2px;
+    }
+
+    .ulNavBar{
+        margin-right: 2rem;
+    }
+
+    .selectLanguage{
+        margin-right: 2rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .menu div{
-        background-color:#f3a7cb;
         width: 35px;
         height: 3px;
         margin: 5px;
         border-radius: 10px;
+        background-color: #ffe8e8;
     }
 
     .icon{
@@ -122,7 +122,7 @@
     }
     
     .active hr{
-        width: 80%;
+        width: 50%;
         opacity: .5;
     }
     
@@ -137,23 +137,15 @@
         top: 5rem;
         width: 100vw;
         height: calc(100% - 5rem);
+        list-style: none;
     }
 
     .active li{
         line-height: 4rem;
         color: #ffffff;
         font-size: 1.5rem;
+        text-decoration: none;
     }
 
 }
 
-/* @media screen and (max-width: 858px) and (orientation: landscape){
-    .ulNavBar span{
-        margin: 5px 0 0 0;
-    }
-
-    .ulNavBar{
-        overflow: scroll;
-        height: calc(100px - 65px);
-    }
-} */

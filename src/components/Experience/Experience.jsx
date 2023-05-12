@@ -6,7 +6,6 @@ export default function Experience() {
 
   return (
     <div className={Style.pruebita}>
-       <h3>HOLA</h3>
     </div>
   )
 }
