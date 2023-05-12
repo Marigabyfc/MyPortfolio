@@ -4,22 +4,27 @@ import { Link } from 'react-router-dom'
 import TranslateIcon from '@mui/icons-material/Translate';
 import {nav} from '../Language/language.json'
 import { useClick } from '../Hooks/useClick';
-import { useModal } from '../Hooks/useModal';
+import logo from '../../images/coverBlancoRelleno.png'
 
 
 export default function NavBar() {
 
-  const [active, clicked] = useClick(false)
+  const [clicked, openModal, closeModal] = useClick(false)
 
   return (
     <header>
       <nav className={Style.navBar}>
-      <h2>MyPortfolio</h2>
-        <ul  className={active ? Style.active : Style.ulNavBar}>
-          <Link to='/' onClick={clicked}><li>Home</li></Link>
-          <Link to='/contact' onClick={clicked}><li>Contact</li></Link>
-          <Link to='/experience' onClick={clicked}><li>Experience</li></Link>
-          <Link to='/skillSet' onClick={clicked}><li>Skill Set</li></Link>
+      <Link to='/'><figure>
+        <Link to='/'><img src={logo} alt="logo" width='140px'/></Link>
+      </figure></Link>
+        <ul  className={clicked ? Style.active : Style.ulNavBar}>
+          <Link to='/home' onClick={openModal && closeModal}><li>Home</li></Link>
+            <hr />
+          <Link to='/contact' onClick={openModal && closeModal}><li>Contact</li></Link>
+            <hr />
+          <Link to='/experience' onClick={openModal && closeModal}><li>Experience</li></Link>
+            <hr />
+          <Link to='/skillSet' onClick={openModal && closeModal}><li>Skill Set</li></Link>
         </ul>   
           <div className={Style.selectLanguage}>
             <TranslateIcon className={Style.icon}/>
@@ -30,7 +35,7 @@ export default function NavBar() {
               </select>
           </div>    
         <div className={Style.menu}>
-          <button onClick={clicked}>
+          <button onClick={openModal}>
             <div></div>
             <div></div>
             <div></div>

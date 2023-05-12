@@ -3,13 +3,14 @@ import React from 'react'
 import { MarigabyFoods, Promanitas } from '../views'
 import foods from '../../images/MarigabyFoods.jpeg'
 import promanitas from '../../images/Promanitas.png'
-import { useModal } from '../Hooks/useModal'
+import { useClick } from '../Hooks/useClick'
+import { Parallax } from 'react-parallax'
 
 const Home = () => {
+  
+  const [clicked, openModal, closeModal] = useClick(false)
 
-  const [open, openModal, closeModal] = useModal(false)
-
-  const [open2, openModal2, closeModal2] = useModal(false)
+  const [clicked2, openModal2, closeModal2] = useClick(false)
 
   return (
     <article className={Style.projects}>
@@ -23,12 +24,13 @@ const Home = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis, magnam voluptate distinctio beatae exercitationem, nobis voluptatibus neque est tenetur laudantium voluptatum cumque. Tempore nemo officia dolore ea illum amet!</p>
               </div>
             </figure>
+            <hr />
           <button onClick={openModal}>More info</button> 
         </div>
-          <Promanitas open={open2} closeModal={closeModal2}>
+          <MarigabyFoods open={clicked} closeModal={closeModal}>
             <h3>Pruebita</h3>
-            <p>Este es el modal de Promanitas</p>
-          </Promanitas> 
+            <p>Este es el modal de el PI de foods</p>
+          </MarigabyFoods> 
       <div className={Style.divProjects}>
           <figure>
             <a href="https://pro-manitas-client.vercel.app/" target="_blank"><img src={promanitas} alt="PF Promanitas"/></a>
@@ -37,12 +39,13 @@ const Home = () => {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis, magnam voluptate distinctio beatae exercitationem, nobis voluptatibus neque est tenetur laudantium voluptatum cumque. Tempore nemo officia dolore ea illum amet!</p>
               </div>
            </figure>
+            <hr />
         <button onClick={openModal2}>More info</button> 
       </div>
-        <MarigabyFoods open={open} closeModal={closeModal}>
-          <h3>Pruebita</h3>
-          <p>Este es el modal de el PI de foods</p>
-        </MarigabyFoods> 
+          <Promanitas open={clicked2} closeModal={closeModal2}>
+            <h3>Pruebita</h3>
+            <p>Este es el modal de Promanitas</p>
+          </Promanitas> 
       </div>
     </article>
   )

@@ -1,0 +1,22 @@
+.landing{
+   background-size: 400% 400%;
+   position: relative;
+   animation: cambiar 6s ease infinite;
+}
+
+.landing figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing figure img{
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes cambiar{
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+}

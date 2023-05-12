@@ -1,4 +1,29 @@
 body{
-    background-color: #ffe8e8;    
+    background: -webkit-linear-gradient(bottom right, rgb(68, 151, 199), rgb(123, 56, 161), rgb(212, 78, 73));
+    background-attachment:fixed;  
 }
 
+button{
+    background: -webkit-linear-gradient(bottom right, rgb(68, 151, 199), rgb(123, 56, 161), rgb(212, 78, 73));
+    font-weight: 600;
+    font-size: medium;
+    color: #1d1d1d;
+}
+
+button:hover{
+    animation-name: swing;
+    -webkit-animation-name: swing;
+    -moz-animation-name: swing;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+}
+
+
+@keyframes swing {
+    20% {transform: rotate3d(0, 0, 1, 15deg);}
+    40% {transform: rotate3d(0, 0, 1, -10deg);}
+    60% {transform: rotate3d(0, 0, 1, 5deg);}
+    80% {transform: rotate3d(0, 0, 1, -5deg);}
+    to  {transform: rotate3d(0, 0, 1, 0deg);}
+}

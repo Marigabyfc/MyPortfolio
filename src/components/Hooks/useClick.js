@@ -2,11 +2,11 @@ import { useState } from 'react';
 
 
 export const useClick = (value = false) =>{
-    const [active, setActive] = useState(value);
+    const [clicked, setClicked] = useState(value);
 
-    function clicked(){
-        setActive(!active)
-    }
+    const openModal = () => setClicked(true)
+    
+    const closeModal = () => setClicked(false)
 
-    return [active, clicked];
+    return [clicked, openModal, closeModal];
 }
