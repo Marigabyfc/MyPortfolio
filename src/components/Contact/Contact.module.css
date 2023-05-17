@@ -7,10 +7,14 @@
     color: aliceblue;
 }
 
-.contact section{
+.contactSection{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+
+.twitter{
+    width: 90px;
 }
 
 
@@ -33,15 +37,46 @@
         -webkit-transform: translatey(-20px);
         -moz-transform: translatey(-20px);
 }
-              
-.contact div:first-child{
+
+.contactH2{
     margin-left: -60px;
 }
 
 .contact div h2{
     font-size: xx-large;
+    text-shadow: 1px 1px 3px #333;
 }
 
 .contact div p{
     font-size: large;
+}
+
+@media screen and (max-width: 885px){
+ .contact .contactImg{
+        gap: 0;
+    }
+    
+ .contactH2{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .contact .contactImg{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .contactImg img{
+        padding: 15px;
+    }
+
+    .twitter{
+        width: 105px;
+    }
+
+    .contact section{
+        gap: 0;
+        margin-top: 6rem;
+    }
 }

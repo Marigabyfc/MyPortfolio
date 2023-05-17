@@ -72,17 +72,26 @@
     text-align: center;
 }
 
+
 .projects figure:hover > .capa{
     opacity: 1;
     visibility: visible;
 }
 
-.projects figure:hover > .capa h3{
-    margin-top: 70px;
+.capa{
+    padding: 1rem;
+}
+
+.capa p{
+    color: aliceblue;
+}
+
+.projects figure:hover > .capa .searchIcon{
+    margin-top: 60px;
     margin-bottom: 15px ;
 }
 
-.projects figure .capa h3{
+.projects figure .capa .searchIcon{
     color: #fff;
     font-weight: 400;
     margin-bottom: 120px;
@@ -98,14 +107,13 @@
     max-width: 220px;
     margin: auto;
 }
-
+ 
 
 .projects button{
     margin-top: 2rem;
     height: 30px;
     border-radius: 30px;
     width: 30%;
-    border-color: #C85C8E;
 }
 
 
@@ -113,8 +121,6 @@
     transition: 0.5s;
     color: aliceblue;
 }
-
-   
 
 
 

@@ -9,16 +9,16 @@ export default function Contact() {
 
   return (
     <article className={Style.contact}>
-      <section>
-        <div>
+      <section className={Style.contactSection}>
+        <div className={Style.contactH2}>
           <h2>Contact</h2>
           <p>Contact me if you want us to work together.</p>
         </div>
         <figure className={Style.contactImg}>
-          <abbr title="Puedes tomar mis datos mediante un formulario haciendo click en el icono"><img src={Mail} alt="Outlook" width='90px' onClick={openModal}/></abbr>
+          <img src={Mail} alt="Outlook" width='90px' onClick={openModal}/>
           <ContactModal open={clicked} closeModal={closeModal}/>
           <a href="https://github.com/Marigabyfc" target='_blank'><img src={GitHub} alt="GitHub" width='160px'/></a>
-          <a href="" target='_blank'><img src={Twitter} alt="Twitter" width='90px'/></a>
+          <a href="https://twitter.com/marigabyfc" target='_blank'><img src={Twitter} alt="Twitter" className={Style.twitter}/></a>
           <a href="https://www.linkedin.com/in/marigabyfc" target='_blank'><img src={linkdn} alt="Linkdn" width='120px'/></a>
         </figure>
       </section>

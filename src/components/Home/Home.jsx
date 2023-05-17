@@ -4,7 +4,7 @@ import { MarigabyFoods, Promanitas } from '../views'
 import foods from '../../images/MarigabyFoods.jpeg'
 import promanitas from '../../images/Promanitas.png'
 import { useClick } from '../Hooks/useClick'
-import { Parallax } from 'react-parallax'
+import SearchIcon from '@mui/icons-material/Search';
 
 const Home = () => {
   
@@ -20,8 +20,8 @@ const Home = () => {
           <figure>
             <a href="https://foods-marigaby.netlify.app/" target="_blank"><img src={foods} alt="PI Comidas"/></a>
               <div className={Style.capa}>
-                <h3>Pruebita a ver si agarra</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis, magnam voluptate distinctio beatae exercitationem, nobis voluptatibus neque est tenetur laudantium voluptatum cumque. Tempore nemo officia dolore ea illum amet!</p>
+                  <SearchIcon className={Style.searchIcon}/>
+                  <p>Can you take a look at my Foods project? This is my first personal project where I put all the knowledge acquired during my studies at Henry.</p>
               </div>
             </figure>
             <hr />
@@ -35,8 +35,8 @@ const Home = () => {
           <figure>
             <a href="https://pro-manitas-client.vercel.app/" target="_blank"><img src={promanitas} alt="PF Promanitas"/></a>
               <div className={Style.capa}>
-                <h3>Pruebita a ver si agarra</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis, magnam voluptate distinctio beatae exercitationem, nobis voluptatibus neque est tenetur laudantium voluptatum cumque. Tempore nemo officia dolore ea illum amet!</p>
+                  <SearchIcon className={Style.searchIcon}/>
+                  <p>Can you take a look at my second project Promanitas? My first group project where 8 Full-Stack Web developers collaborated to create an express job board.</p>
               </div>
            </figure>
             <hr />
