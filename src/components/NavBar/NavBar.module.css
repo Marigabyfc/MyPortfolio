@@ -57,14 +57,14 @@
 
 .menu button{
     background: #333;
-    /* background-color: transparent; */
     border: none;
 }
 
-.ulNavBar li{
-    padding: 1em;
+.ulNavBar li,
+.ulNavBar a{
+    padding: .5em;
     color: #ffe8e8;
-    font-size: larger;
+    font-size: large;
 }
 
 .ulNavBar li:hover{
@@ -76,9 +76,6 @@
 
 
 @media screen and (max-width: 770px) {
-    .navBar li{
-        font-size: 16px;
-    }  
 
     .navBar img{
         padding-left: 1rem;
@@ -97,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 677px) {
     .menu div{
         width: 35px;
         height: 3px;
@@ -139,10 +136,11 @@
         list-style: none;
     }
 
-    .active li{
+    .active li,
+    .active a{
         line-height: 4rem;
         color: #ffffff;
-        font-size: 1.5rem;
+        font-size: .5rem;
         text-decoration: none;
     }
 
