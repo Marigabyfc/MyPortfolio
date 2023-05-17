@@ -1,7 +1,62 @@
-.pruebita{
-    display: flex;
+.experience{
+    display: grid;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
+    color: aliceblue;
+    padding: 3rem;
+}
+
+.experience section{
+    margin-top: 4rem;
+}
+
+.experience h2{
+    text-shadow: 1px 1px 3px #333;
+}
+
+.companies{
+    font-size: x-large;
+    text-shadow: 1px 1px 3px #333;
+
+}
+
+.paragraphExp{
+    font-size: larger;
+    text-shadow: 1px 1px 3px #333;
+
+}
+
+.experience ul li{
+    font-size: large;
+}
+
+.experience .firstSection{
+    margin-right: 20vw;
+}
+
+.experience .secondSection{
+    margin-left: 25vw;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.column button{
+    border-radius: 30px;
+    width: 90px;
+    font-size: smaller;
+    border: 0.5px;
+    cursor: pointer;
+}
+
+.column button:hover{
+    transition: 0.5s;
+    color: aliceblue;
+    font-weight: 300;
 }
