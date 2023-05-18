@@ -20,7 +20,7 @@ export default function SkillSet() {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        slidesPerView={'3'}
+        slidesPerView={'2'}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
