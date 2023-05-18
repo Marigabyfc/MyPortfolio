@@ -1,14 +1,7 @@
 import Style from './ContactModal.module.css'
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
-import LocationCityIcon from '@mui/icons-material/LocationCity';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import SendIcon from '@mui/icons-material/Send';
-import MailIcon from '@mui/icons-material/Mail';
-import Swal from "sweetalert2";
-const VITE_SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
-const VITE_TEMPLATE_ID = import.meta.env.VITE_ID;
-const VITE_PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+import { SendIcon, BusinessCenterIcon, MailIcon, LocationCityIcon, Swal, VITE_PUBLIC_KEY, VITE_SERVICE_ID, VITE_TEMPLATE_ID } from '../../views';
 
 
 export default function ContactModal({open, closeModal}) {

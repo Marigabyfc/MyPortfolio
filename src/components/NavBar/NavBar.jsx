@@ -14,17 +14,17 @@ export default function NavBar() {
   return (
     <header>
       <nav className={Style.navBar}>
-      <Link to='/'><figure>
+      <figure>
         <Link to='/'><img src={logo} alt="logo" width='140px'/></Link>
-      </figure></Link>
+      </figure>
         <ul  className={clicked ? Style.active : Style.ulNavBar}>
-          <Link to='/home' onClick={openModal && closeModal}><li>Home</li></Link>
+          <li><Link to='/home' onClick={openModal && closeModal}>Home</Link></li>
             <hr />
-          <Link to='/contact' onClick={openModal && closeModal}><li>Contact</li></Link>
+          <li><Link to='/contact' onClick={openModal && closeModal}>Contact</Link></li>
             <hr />
-          <Link to='/experience' onClick={openModal && closeModal}><li>Experience</li></Link>
+          <li><Link to='/experience' onClick={openModal && closeModal}>Experience</Link></li>
             <hr />
-          <Link to='/skillSet' onClick={openModal && closeModal}><li>Skill Set</li></Link>
+          <li><Link to='/skillSet' onClick={openModal && closeModal}>Skill Set</Link></li>
         </ul>   
           <div className={Style.selectLanguage}>
             <TranslateIcon className={Style.icon}/>
