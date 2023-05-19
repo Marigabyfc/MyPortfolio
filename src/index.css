@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@700&family=Dosis&family=Rampart+One&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 *{
    font-family: 'Abel', sans-serif;
