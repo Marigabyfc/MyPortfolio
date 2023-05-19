@@ -1,83 +1,57 @@
-import React from 'react'
+import React, { useState  } from 'react'
 import Style from './SkillSet.module.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Css, Html, Js, Sequelize, Postgre, Node, NodeJs, ReactJs, Redux, Ts, MySql } from '../views'
+import { Css, Html, Js, Sequelize, Postgre, Node, ReactJs, Redux, Ts, MySql, ArrowBackIosIcon, ArrowForwardIosIcon } from '../views'
+import Slider from 'react-slick'
 
 
 export default function SkillSet() {
 
+  const images = [Css, Html, Js, Sequelize, Postgre, Node, ReactJs, Redux, Ts, MySql]
+  
+  const [imageIndex, setImageIndex] = useState(0); 
+
+const NextArrow = ({onClick}) =>{
+  return(
+    <div className={Style.rightArrow} onClick={onClick}>
+      <ArrowForwardIosIcon fontSize= 'large' className={Style.icon}/>
+    </div>
+  )
+}
+
+const PrevArrow = ({onClick}) =>{
+  return(
+    <div className={Style.leftArrow} onClick={onClick}>
+      <ArrowBackIosIcon fontSize= 'large' className={Style.icon}/>
+    </div>
+  )
+}
+
+  const settings = {
+    infinite: true,
+    lazyload: true,
+    speed: 700,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: 0,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>,
+    beforeChange: (current, next) => setImageIndex(next)
+  }
+    
   return (
     <main className={Style.allSkills}>
       <div className={Style.skillsContainer}>
-        <h2>My Skills</h2>
-      <Swiper
-        effect={'fade'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'2'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        pagination={{ el: Style.swiper_pagination, clickable: true }}
-        navigation={{
-          nextEl: Style.swiper_button_next,
-          prevEl: Style.swiper_button_prev,
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className={Style.swiper_container}
-      >
-      <SwiperSlide className={Style.swiper_slide}>
-          <img src={Css} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Html} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Js} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Node} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ReactJs} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Redux} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Postgre} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Ts} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={MySql} alt="slide_image"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Sequelize} alt="slide_image"/>
-        </SwiperSlide>
-
-        <div className={Style.slider_controler}>
-          <div className={Style.swiper_button_prev}>
-            <ion-icon name="{arrow-back-outline}"></ion-icon>
-          </div>
-          <div className={Style.swiper_button_next}>
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className={Style.swiper_pagination}></div>
-        </div>
-      </Swiper>
+      <h2>My Skills</h2>
+      <Slider {...settings}>
+        {
+          images && images.map((img, index) => (
+            <figure className={index === imageIndex ? Style.activeSlide : Style.slide} >
+              <img src={img} alt={img} />
+            </figure>
+          ))
+        }
+      </Slider>
       </div>
-    </main>
+    </main> 
   )
 }

@@ -19,7 +19,7 @@ import Html from '../images/TechLogos/html5.png'
 import Js from '../images/TechLogos/logo-javascript.png'
 import Node from '../images/TechLogos/nodejs.png'
 import NodeJs from '../images/TechLogos/nodejsSR.png'
-import Postgre from '../images/TechLogos/postgresql.png'
+import Postgre from '../images/TechLogos/postgresql2.png'
 import ReactJs from '../images/TechLogos/react.png'
 import Redux from '../images/TechLogos/redux.png'
 import Sequelize from '../images/TechLogos/sequelize.png'
@@ -32,6 +32,8 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SendIcon from '@mui/icons-material/Send';
 import MailIcon from '@mui/icons-material/Mail';
 import Swal from "sweetalert2";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 //<--------------- VARIABLES DE ENTORNO-------------------->
 const VITE_SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
@@ -68,6 +70,8 @@ export {
     SendIcon,
     MailIcon,
     Swal,
+    ArrowBackIosIcon, 
+    ArrowForwardIosIcon,
     VITE_PUBLIC_KEY,
     VITE_TEMPLATE_ID,
     VITE_SERVICE_ID
