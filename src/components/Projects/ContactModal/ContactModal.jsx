@@ -79,7 +79,10 @@ export default function ContactModal({open, closeModal}) {
                     <textarea name="message" rows="3" required value={newForm.message} onChange={handleChange}></textarea>
                   </p>
                   <p className={Style.block}>
-                    <button type='submit' value="Send"><SendIcon/> Send</button>
+                    <button type='submit' value="Send">
+                      <span className={Style.icon}><SendIcon/></span>
+                       <span className={Style.text}>Send</span>
+                       </button>
                   </p>
                 </form>
               </div>

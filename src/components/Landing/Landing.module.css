@@ -1,22 +1,59 @@
+
 .landing{
-   background-size: 400% 400%;
-   position: relative;
-   animation: cambiar 6s ease infinite;
-}
-
-.landing figure{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.landing article{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.landing figure img{
-    height: 200px;
-    width: 200px;
+.landingDiv *{
+    padding: .5rem;
 }
 
-@keyframes cambiar{
-    0% {background-position: 0 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0 50%;}
+.landing h1,
+.landing h2{
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #333;
+}
+
+.landing p{
+    font-size: 18px;
+    text-shadow: 1px 1px 3px #333;
+}
+
+.landing hr {
+    width: 70%;
+}
+
+.landingDiv{
+    width: 70%;
+    position: relative;
+}
+
+.landingDiv section{
+    width: 70%;
+}
+
+.landingDiv span{
+  background-image: linear-gradient(to right, rgb(68, 151, 199), rgb(123, 56, 161), rgb(212, 78, 73));
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+.landingDiv button{
+    border-radius: 50px;
+}
+
+.divButton{
+    position: absolute;
+    right: 0;
+    top: 80%;
 }

@@ -1,5 +1,8 @@
 import Style from './Experience.module.css'
-import React from 'react'
+import React, { useEffect } from 'react'
+// import { useSpring, animated } from '@react-spring/web'}
+import { useSpring, animated } from "@react-spring/web";
+
 
 export default function Experience() {
 
@@ -28,6 +31,7 @@ export default function Experience() {
         <span className={Style.companies}>Henry</span>
         <ul>
           <li>Lead and coordinate a group of students with the goal of achieving their program adaptation</li>
+          <li>Assist in solving exercises and promote group collaboration (Pair Programming).</li>
           <li>Promote group cohesion and community building</li>
           <li>Soft Skills training</li>
         </ul>

@@ -12,6 +12,11 @@
     z-index: 99;
 } 
 
+.navBar img{
+    width: 100px;
+    padding: 7px 0 0 0;
+}
+
 .ulNavBar{
    display: flex;
    justify-content: flex-end;

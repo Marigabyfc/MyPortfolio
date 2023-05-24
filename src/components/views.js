@@ -25,6 +25,14 @@ import Redux from '../images/TechLogos/redux.png'
 import Sequelize from '../images/TechLogos/sequelize.png'
 import Ts from '../images/TechLogos/typescript.png'
 import MySql from '../images/TechLogos/mysql.png'
+import image1 from '../images/parallax/acolor.png'
+import image2 from '../images/parallax/acolorOver.png'
+import image3 from '../images/parallax/Sin título.png'
+import image4 from '../images/parallax/figurasOver.png'
+import image5 from '../images/parallax/figurasBack.png'
+import image6 from '../images/parallax/figuritas.png'
+import image7 from '../images/parallax/figuritas2.png'
+import resume from '../images/resume.png'
 
 //<----------------------MUI ICONS----------------------->
 import LocationCityIcon from '@mui/icons-material/LocationCity';
@@ -65,6 +73,14 @@ export {
     Sequelize,
     Ts,
     MySql,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    resume,
     LocationCityIcon,
     BusinessCenterIcon,
     SendIcon,
