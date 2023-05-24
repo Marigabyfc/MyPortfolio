@@ -15,7 +15,7 @@ export default function NavBar() {
     <header>
       <nav className={Style.navBar}>
       <figure>
-        <Link to='/'><img src={logo} alt="logo" width='140px'/></Link>
+       <img src={logo} alt="logo" width='140px'/>
       </figure>
         <ul  className={clicked ? Style.active : Style.ulNavBar}>
           <li><Link to='/home' onClick={openModal && closeModal}>Home</Link></li>

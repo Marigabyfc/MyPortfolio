@@ -8,12 +8,15 @@
   flex-direction: column;
 }
 
+.skillsContainer{
+  margin-top: 6.5rem;
+}
  .allSkills h2{
   font-size: xx-large;
   color: aliceblue;
   text-shadow: 1px 1px 3px #333;
   text-align: center;
-  margin: 8rem 0 3rem 0;
+  margin: 5rem 0 5rem 0;
 } 
 
 .icon{
@@ -49,12 +52,17 @@
   transition: .5s ease-out;
   color: rgb(123, 56, 161);
 }
-
+/* 
 .icon .arrowNext{
  display: flex;
- align-items: center;
 }
 
 .icon .arrowPrev{
   position: absolute;
+} */
+
+@media screen and (max-width: 400px) {
+  .activeSlide{
+    transform: scale(0.5);
+  }
 }

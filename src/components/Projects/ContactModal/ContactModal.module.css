@@ -23,14 +23,15 @@
     position: relative;
     width: 70vw;
     height: 75vh;
-    overflow-y: auto;
     background-color: #333;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    overflow: hidden;
 }
 
 .firstDiv{
     margin-left: auto;
     margin-right: auto;
+    padding: .6rem 0 0 0;
 }
 
 .secondDiv{
@@ -126,9 +127,17 @@ input:-webkit-autofill:focus {
     background-color: rgb(123, 56, 161);
     animation: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;
+}
+
+.firstDiv .icon{
+    margin: 3px 5px 0 0;
 }
 
 .firstDiv form button:hover{

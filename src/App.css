@@ -29,3 +29,7 @@ button:hover{
     80% {transform: rotate3d(0, 0, 1, -5deg);}
     to  {transform: rotate3d(0, 0, 1, 0deg);}
 }
+
+.backgroundLayer{
+    background-color: rgba(0, 0, 0, 0.5);
+}
