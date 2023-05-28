@@ -1,27 +1,42 @@
 import Style from './Home.module.css'
-import React from 'react'
+import React, {useState} from 'react'
 import { MarigabyFoods, Promanitas } from '../views'
 import foods from '../../images/MarigabyFoods.jpeg'
 import promanitas from '../../images/Promanitas.png'
 import { useClick } from '../Hooks/useClick'
 import SearchIcon from '@mui/icons-material/Search';
+import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
   
+  const { ref: firstRef, inView: firstInView } = useInView({ 
+    triggerOnce: true
+  });
+
+  const { ref: secondRef, inView: secondInView } = useInView({ 
+    triggerOnce: true
+  });
+
+  const { ref: thirdRef, inView: thirdInView } = useInView({ 
+    triggerOnce: true
+  });
+
   const [clicked, openModal, closeModal] = useClick(false)
 
   const [clicked2, openModal2, closeModal2] = useClick(false)
 
   return (
     <article className={Style.projects}>
-        <h1>My Projects</h1>
+        <h1 ref={thirdRef} className={thirdInView ? Style.appear : ''}>My Projects</h1>
       <div className={Style.container}>
-        <div className={Style.divProjects}>
+        <div ref={firstRef} className={`${Style.divProjects} ${firstInView ? Style.marigabyFoods : ''}`}>
           <figure>
-            <a href="https://foods-marigaby.netlify.app/" target="_blank"><img src={foods} alt="PI Comidas"/></a>
+           <img src={foods} alt="PI Comidas"/>
               <div className={Style.capa}>
+                <a href="https://foods-marigaby.netlify.app/" target="_blank">
                   <SearchIcon className={Style.searchIcon}/>
                   <p>Can you take a look at my Foods project? This is my first personal project where I put all the knowledge acquired during my studies at Henry.</p>
+                </a>
               </div>
             </figure>
             <hr />
@@ -31,12 +46,14 @@ const Home = () => {
             <h3>Pruebita</h3>
             <p>Este es el modal de el PI de foods</p>
           </MarigabyFoods> 
-      <div className={Style.divProjects}>
+      <div ref={secondRef} className={`${Style.divProjects} ${secondInView ? Style.promanitas  : ''}`}>
           <figure>
-            <a href="https://pro-manitas-client.vercel.app/" target="_blank"><img src={promanitas} alt="PF Promanitas"/></a>
+            <img src={promanitas} alt="PF Promanitas"/>
               <div className={Style.capa}>
-                  <SearchIcon className={Style.searchIcon}/>
-                  <p>Can you take a look at my second project Promanitas? My first group project where 8 Full-Stack Web developers collaborated to create an express job board.</p>
+                  <a href="https://pro-manitas-client.vercel.app/" target="_blank">
+                    <SearchIcon className={Style.searchIcon}/>
+                    <p>Can you take a look at my second project Promanitas? My first group project where 8 Full-Stack Web developers collaborated to create an express job board.</p>
+                  </a>
               </div>
            </figure>
             <hr />

@@ -1,18 +1,20 @@
 import Style from './Experience.module.css'
-import React, { useEffect } from 'react'
-// import { useSpring, animated } from '@react-spring/web'}
-import { useSpring, animated } from "@react-spring/web";
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
 
 
 export default function Experience() {
 
+  const { ref : firstRef, inView: firstView } = useInView({triggerOnce: true})
+  const { ref : secondRef, inView: secondView } = useInView({triggerOnce: true})
+
   return (
     <article className={Style.experience}>
-      <section className={Style.firstSection}>
+      <section ref={firstRef} className={`${Style.firstSection} ${firstView ? Style.expAnimated : ''}`}>
         <div>
           <h2>Sales Consultant <span>(Dec 2021- Oct 2022)</span></h2>
         </div>
-          <div className={Style.column}>
+          <div className={`${Style.column} ${firstView ? Style.columnAnimated : ''}`}>
         <span className={Style.companies}>Vnet</span>
         <p className={Style.paragraphExp}>(Fiber Optic Internet Service)</p>
         <ul>
@@ -23,11 +25,11 @@ export default function Experience() {
           <a href="https://www.vnet.com.ve/" target='_blank'><button>See Website</button></a>
           </div>
       </section>
-      <section className={Style.secondSection}>
+      <section  ref={secondRef} className={`${Style.secondSection} ${secondView ? Style.expAnimated2 : ''}`}>
         <div>
           <h2>Teaching Assistant <span>(Feb 2023- Apr 2023)</span></h2>
         </div>
-          <div className={Style.column}>
+          <div className={`${Style.column} ${secondView ? Style.columnAnimated2 : ''}`}>
         <span className={Style.companies}>Henry</span>
         <ul>
           <li>Lead and coordinate a group of students with the goal of achieving their program adaptation</li>

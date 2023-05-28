@@ -33,3 +33,36 @@ button:hover{
 .backgroundLayer{
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.inViewHome{
+    opacity: 0;
+    animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+.inViewContact{
+  opacity: 0;
+  animation: slideInFromLeft 2s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-40px, -40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+  }
+
+
+@keyframes contactUp {
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

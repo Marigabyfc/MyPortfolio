@@ -1,7 +1,7 @@
 import Style from './ContactModal.module.css'
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
-import { SendIcon, BusinessCenterIcon, MailIcon, LocationCityIcon, Swal, VITE_PUBLIC_KEY, VITE_SERVICE_ID, VITE_TEMPLATE_ID } from '../../views';
+import { SendIcon, BusinessCenterIcon, MailIcon, LocationCityIcon, Swal, VITE_PUBLIC_KEY, VITE_SERVICE_ID, VITE_TEMPLATE_ID, profile } from '../../views';
 
 
 export default function ContactModal({open, closeModal}) {
@@ -88,6 +88,9 @@ export default function ContactModal({open, closeModal}) {
               </div>
                 <div className={Style.secondDiv}>
                   <h4>More Info</h4>
+                  <figure>
+                    <img src={profile} alt="" width='150px'/>
+                  </figure>
                     <ul className={Style.ulDiv}>
                       <div>
                       <BusinessCenterIcon/>
@@ -102,7 +105,7 @@ export default function ContactModal({open, closeModal}) {
                       <li>marianag_flores@hotmail.com</li>
                       </div>
                     </ul>
-                    <p>Hi! My name is Mariana Flores, and it's a pleasure to have you here at this stage of my portfolio. We can get in touch by leaving your contact information and message, which will be sent to my email. I'll be happy to respond.</p>
+                    <p>Hi! it's a pleasure to have you here at this stage of my portfolio. We can get in touch by leaving your contact information and message, which will be sent to my email. I'll be happy to respond.</p>
                 </div>
             </div>
         </section>

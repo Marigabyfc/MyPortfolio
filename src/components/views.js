@@ -8,6 +8,10 @@ import SkillSet from "./SkillSet/SkillSet";
 import MarigabyFoods from "./Projects/MarigabyFoods/MarigabyFoods"
 import Promanitas from "./Projects/Promanitas/Promanitas"
 import ContactModal from "./Projects/ContactModal/ContactModal";
+import MiddleLanding from "./MiddleComponents/MiddleLanding/MiddleLanding";
+import MiddleHome from "./MiddleComponents/MiddleHome/MiddleHome";
+import MiddleExperience from "./MiddleComponents/MiddleExperience/MiddleExperience";
+import MiddleContact from "./MiddleComponents/MiddleContact/MiddleContact";
 
 //<---------------------IMAGENES------------------->
 import GitHub from '../images/GitHub.png'
@@ -27,12 +31,19 @@ import Ts from '../images/TechLogos/typescript.png'
 import MySql from '../images/TechLogos/mysql.png'
 import image1 from '../images/parallax/acolor.png'
 import image2 from '../images/parallax/acolorOver.png'
-import image3 from '../images/parallax/Sin título.png'
-import image4 from '../images/parallax/figurasOver.png'
-import image5 from '../images/parallax/figurasBack.png'
+import image4 from '../images/parallax/contactOver.png'
+import image5 from '../images/parallax/contactBack.png'
 import image6 from '../images/parallax/figuritas.png'
 import image7 from '../images/parallax/figuritas2.png'
+import image8 from '../images/parallax/landingmedio.png'
+import image9 from '../images/parallax/landingmedioOver.png'
+import image11 from '../images/parallax/homemedio.png'
+import image12 from '../images/parallax/homemedioOver.png'
+import image13 from '../images/parallax/contactmedioBack.png'
+import image14 from '../images/parallax/contactmedio.png'
+import image15 from '../images/parallax/contactmedioOver.png'
 import resume from '../images/resume.png'
+import profile from '../images/FotoPerfil.jpeg'
 
 //<----------------------MUI ICONS----------------------->
 import LocationCityIcon from '@mui/icons-material/LocationCity';
@@ -58,6 +69,10 @@ export {
     Promanitas,
     Landing,
     ContactModal,
+    MiddleLanding,
+    MiddleHome,
+    MiddleContact,
+    MiddleExperience,
     GitHub,
     linkdn,
     Mail,
@@ -75,12 +90,19 @@ export {
     MySql,
     image1,
     image2,
-    image3,
     image4,
     image5,
     image6,
     image7,
+    image8,
+    image9,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
     resume,
+    profile,
     LocationCityIcon,
     BusinessCenterIcon,
     SendIcon,
