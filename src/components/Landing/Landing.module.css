@@ -49,11 +49,74 @@
 }
 
 .landingDiv button{
+    opacity: 0;
     border-radius: 50px;
+    animation: slideleft 2s 1.5s ease-in-out forwards;
 }
 
 .divButton{
     position: absolute;
     right: 0;
     top: 80%;
+}
+
+.viewLanding{
+    animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+        0%{
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+.viewSectionLanding div:nth-child(1){
+    opacity: 0;
+    animation: slideleft 2s 0.5s ease-in-out forwards;
+}
+
+.viewSectionLanding div:nth-child(2){
+    opacity: 0;
+    animation: slideleft 2s 1.5s ease-in-out forwards;
+}
+
+@keyframes slideleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .landing h1,
+    .landing h2{
+        font-size: 5vw;
+    }
+
+    .landing p{
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 570px) {
+    .landing h1{
+        font-size: 2rem;
+    }
+
+    .landing h2 {
+        font-size: 1.2rem;
+    }
+
+    .landing p{
+        font-size: medium;
+    }
 }

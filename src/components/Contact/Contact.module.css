@@ -51,6 +51,42 @@
     font-size: large;
 }
 
+.imgAnimation img{
+    animation: fadeUp 2s ease-in-out;
+}
+
+.contactA{
+    opacity: 0;
+    animation: slideInFromLeft 2s .5s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+@keyframes fadeUp {
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 @media screen and (max-width: 885px){
  .contact .contactImg{
         gap: 0;

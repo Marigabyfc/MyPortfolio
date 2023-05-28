@@ -25,13 +25,12 @@
     height: 75vh;
     background-color: #333;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .firstDiv{
     margin-left: auto;
     margin-right: auto;
-    padding: .6rem 0 0 0;
 }
 
 .secondDiv{
@@ -43,7 +42,11 @@
 .secondDiv > *{
     margin: 0 0 1rem 0;
     text-align: center;
-    padding: .5rem;
+}
+
+.secondDiv figure{
+    pointer-events: none;
+    animation-name: none;
 }
 
 .ulDiv div{
@@ -158,17 +161,27 @@ input:-webkit-autofill:focus {
     color: aliceblue;
 }
 
+
+
 @media (min-width: 800px) {
     .firstDiv{
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
+
 }
 
 @media (max-width: 800px){
     .firstDiv{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1100px){
+    .isOpen{
+        overflow-y: scroll;
     }
 }

@@ -45,7 +45,7 @@ const PrevArrow = ({onClick}) =>{
       <Slider {...settings}>
         {
           images && images.map((img, index) => (
-            <figure className={index === imageIndex ? Style.activeSlide : Style.slide} >
+            <figure key={index} className={index === imageIndex ? Style.activeSlide : Style.slide} >
               <img src={img} alt={img} />
             </figure>
           ))
