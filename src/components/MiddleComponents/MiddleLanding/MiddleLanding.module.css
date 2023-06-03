@@ -30,17 +30,17 @@
 
 .welAnimated h3{
     opacity: 0;
-    animation: up 1.5s ease-in-out forwards;
+    animation: up 1s ease-in-out forwards;
 }
 
 .welAnimated p{
     opacity: 0;
-    animation: up 1.5s 1s ease-in-out forwards;
+    animation: up 1s 1s ease-in-out forwards;
 }
 
 .welAnimated div{
     opacity: 0;
-    animation: up 1.5s 1.5s ease-in-out forwards;
+    animation: up 1s 1.5s ease-in-out forwards;
 }
 
 

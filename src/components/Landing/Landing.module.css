@@ -52,6 +52,7 @@
     opacity: 0;
     border-radius: 50px;
     animation: slideleft 2s 1.5s ease-in-out forwards;
+    cursor: pointer;
 }
 
 .divButton{

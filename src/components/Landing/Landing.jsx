@@ -21,7 +21,7 @@ export default function Landing() {
   };
   
   return (
-    <header className={Style.landing}>
+    <header id='landing' className={Style.landing}>
       <article>
         <div className={Style.landingDiv}>
           <div ref={firstRef} className={firstView ? Style.viewLanding : ''}>

@@ -2,25 +2,49 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+
 *{
-   font-family: 'Abel', sans-serif;
+  font-family: 'Abel', sans-serif;
     /* font-family: 'Dosis', sans-serif; */
     /* font-family: 'Rampart One', cursive; */
     /* font-family: 'Amatic SC', cursive; */
   }
   
-
-*, 
-*:after,
-*:before {
+  *::selection{
+    background:  blueviolet;
+  }
+  
+  *, 
+  *:after,
+  *:before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+  }
+  
+  
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
+::-webkit-scrollbar {
+  width: 10px; 
+}
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-} 
+::-webkit-scrollbar-track {
+  background: #757575;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #424242; 
+}

@@ -39,7 +39,7 @@ const PrevArrow = ({onClick}) =>{
   }
     
   return (
-    <main className={Style.allSkills}>
+    <main id='skillset' className={Style.allSkills}>
       <div className={Style.skillsContainer}>
       <h2>My Skills</h2>
       <Slider {...settings}>

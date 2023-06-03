@@ -1,30 +1,69 @@
 import Style from './NavBar.module.css'
-import React from 'react'
-import { Link } from 'react-router-dom'
-import TranslateIcon from '@mui/icons-material/Translate';
-import {nav} from '../Language/language.json'
-import { useClick } from '../Hooks/useClick';
-import logo from '../../images/coverBlancoRelleno.png'
-
+import React, { useState } from 'react'
+import { nav } from '../Language/language.json'
+import { logo, TranslateIcon } from '../views'
+import { useInView } from 'react-intersection-observer'
 
 export default function NavBar() {
 
-  const [clicked, openModal, closeModal] = useClick(false)
+  const { ref : firstRef, inView: firstView } = useInView(/* {triggerOnce: true} */)
+
+  const { ref : secondRef, inView: secondView } = useInView(/* {triggerOnce: true} */)
+
+  const [fix, setFix] = useState(false)
+
+ function setFixed(){
+    if (window.scrollY >= 200) {
+      setFix(true)
+      console.log(window.scrollY + '  scroll');
+    }
+    else{
+      setFix(false)
+    }
+  };
+
+  window.addEventListener('scroll', setFixed)
+
+  const [ open, setOpen ] = useState(false)
+
+  const click = () =>{
+    setOpen(!open)
+  }
 
   return (
     <header>
-      <nav className={Style.navBar}>
-      <figure>
-       <img src={logo} alt="logo" width='140px'/>
+      <nav ref={firstRef} className={Style.navBar}>
+      <figure  /* className={firstView ? Style.changeNav : ''} */>
+        <a href="#landing">
+          <img src={logo} alt="logo" width='140px'/>
+        </a>
       </figure>
-        <ul  className={clicked ? Style.active : Style.ulNavBar}>
-          <li><Link to='/home' onClick={openModal && closeModal}>Home</Link></li>
+        <ul  className={`${Style.ulNavBar} ${firstView ? Style.changeNav : null}` }>
+          {/* <div className={`${Style.uldiv} ${firstView ? Style.changeNav : null}`}> */}
+          <li className={firstView ? Style.changeNav : null}>
+            <a href='#home' onClick={click}>
+              Home
+            </a>
+          </li>
             <hr />
-          <li><Link to='/contact' onClick={openModal && closeModal}>Contact</Link></li>
+          <li>
+            <a  href='#contact' onClick={click}>
+              Contact
+            </a>
+          </li>
             <hr />
-          <li><Link to='/experience' onClick={openModal && closeModal}>Experience</Link></li>
+          <li>
+            <a href='#experience' onClick={click}>
+              Experience
+            </a>
+          </li>
             <hr />
-          <li><Link to='/skillSet' onClick={openModal && closeModal}>Skill Set</Link></li>
+          <li>
+            <a href='#skillset' onClick={click}>
+              Skill Set
+            </a>
+          </li>
+          {/* </div> */}
         </ul>   
           <div className={Style.selectLanguage}>
             <TranslateIcon className={Style.icon}/>
@@ -35,7 +74,7 @@ export default function NavBar() {
               </select>
           </div>    
         <div className={Style.menu}>
-          <button onClick={openModal}>
+          <button onClick={click}>
             <div></div>
             <div></div>
             <div></div>

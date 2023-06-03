@@ -57,7 +57,7 @@
 
 .contactA{
     opacity: 0;
-    animation: slideInFromLeft 2s .5s ease-in-out forwards;
+    animation: slideInFromLeft 1s .5s ease-in-out forwards;
 }
 
 @keyframes slideInFromLeft {
