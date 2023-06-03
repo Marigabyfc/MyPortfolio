@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
+    /* background-color: rgba(0, 0, 0, 0.75); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,17 @@
     height: 75vh;
     background-color: #333;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
-    overflow-y: hidden;
+    overflow-y: auto;
+    animation: popUp 1.5s ease-in-out forwards;
+}
+
+@keyframes popUp {
+    0%{
+        transform: scale(30px);
+    }
+    100%{
+        transform: scale(0px);
+    }
 }
 
 .firstDiv{
@@ -154,12 +164,13 @@ input:-webkit-autofill:focus {
 .contactModal button{
     width: 5rem;
     border-radius: 30px;
-    background: none;
+    background: rgba(0, 0, 0, 0.5);
 }
 .contactModal button:hover{
     transition: 0.5s;
     color: aliceblue;
 }
+
 
 
 

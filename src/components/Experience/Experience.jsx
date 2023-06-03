@@ -9,7 +9,7 @@ export default function Experience() {
   const { ref : secondRef, inView: secondView } = useInView({triggerOnce: true})
 
   return (
-    <article className={Style.experience}>
+    <article id='experience' className={Style.experience}>
       <section ref={firstRef} className={`${Style.firstSection} ${firstView ? Style.expAnimated : ''}`}>
         <div>
           <h2>Sales Consultant <span>(Dec 2021- Oct 2022)</span></h2>

@@ -21,12 +21,16 @@ const Home = () => {
     triggerOnce: true
   });
 
+  const { ref: fourthRef, inView: fourthInView } = useInView(/* { 
+    triggerOnce: true
+  } */);
+
   const [clicked, openModal, closeModal] = useClick(false)
 
   const [clicked2, openModal2, closeModal2] = useClick(false)
 
   return (
-    <article className={Style.projects}>
+    <article id='home' className={Style.projects}>
         <h1 ref={thirdRef} className={thirdInView ? Style.appear : ''}>My Projects</h1>
       <div className={Style.container}>
         <div ref={firstRef} className={`${Style.divProjects} ${firstInView ? Style.marigabyFoods : ''}`}>

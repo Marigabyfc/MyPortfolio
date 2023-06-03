@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import {Contact, Experience, NavBar, SkillSet, Home, Landing, image1, image2, 
-  image4, image5, image6, image7, image8, image9, image11, image12, image13, image14, image15, MiddleLanding} from './components/views.js'
+  image4, image5, image6, image7, image8, image9, image11, image12, image13, image14, image15, MiddleLanding, MiddleHome} from './components/views.js'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { useInView } from 'react-intersection-observer'
 
@@ -53,11 +53,11 @@ return (
         </div>
       </ParallaxLayer>
      
-      {/* <ParallaxLayer  offset={1.95} speed={0.8}>
+      {/* <ParallaxLayer  offset={1.85} speed={0.8}>
         <img src={image11} alt="" />
-      </ParallaxLayer>
+      </ParallaxLayer> */}
      
-      <ParallaxLayer  offset={1.95} speed={1}>
+      {/* <ParallaxLayer  offset={1.95} speed={1}>
         <img src={image12} alt="" />
       </ParallaxLayer> */}
 

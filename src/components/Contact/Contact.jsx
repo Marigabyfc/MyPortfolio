@@ -11,7 +11,7 @@ export default function Contact() {
   const [clicked, openModal, closeModal] = useClick(false)
 
   return (
-    <article className={Style.contact}>
+    <article id='contact' className={Style.contact}>
       <section className={Style.contactSection}>
         <div ref={firstRef} className={`${Style.contactH2} ${firstView ? Style.contactA : ''}`}>
           <h2>Contact</h2>

@@ -14,6 +14,7 @@ import MiddleExperience from "./MiddleComponents/MiddleExperience/MiddleExperien
 import MiddleContact from "./MiddleComponents/MiddleContact/MiddleContact";
 
 //<---------------------IMAGENES------------------->
+import logo from '../images/coverBlancoRelleno.png'
 import GitHub from '../images/GitHub.png'
 import linkdn from '../images/linkedinRedondo.png'
 import Mail from '../images/outlookLogo.png'
@@ -53,6 +54,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import Swal from "sweetalert2";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import TranslateIcon from '@mui/icons-material/Translate';
+
 
 //<--------------- VARIABLES DE ENTORNO-------------------->
 const VITE_SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
@@ -73,6 +76,7 @@ export {
     MiddleHome,
     MiddleContact,
     MiddleExperience,
+    logo,
     GitHub,
     linkdn,
     Mail,
@@ -110,7 +114,9 @@ export {
     Swal,
     ArrowBackIosIcon, 
     ArrowForwardIosIcon,
+    TranslateIcon,
     VITE_PUBLIC_KEY,
     VITE_TEMPLATE_ID,
     VITE_SERVICE_ID
 }
+

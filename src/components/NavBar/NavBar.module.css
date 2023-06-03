@@ -1,27 +1,33 @@
 .navBar{
     height: 4.5rem;
-    background: #333;
-    border-bottom: solid 2px rgb(123, 56, 161);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
     justify-content: space-around;
     display: flex;
     align-items: center;
-    width: calc(100% - 1.1rem);
+    width: calc(100% - 10px);
     position: fixed;
     text-shadow: 1px 1px 3px #333;
     z-index: 99;
 } 
+
+/* .changeNav{
+    background-color: #333;
+    border-bottom: solid 2px rgb(123, 56, 161);
+    transition: 3s ease-in-out;
+} */
 
 .navBar img{
     width: 100px;
     padding: 7px 0 0 0;
 }
 
+.ulNavBar div,
 .ulNavBar{
    display: flex;
    justify-content: flex-end;
    list-style: none;
    width: 60%;
+   cursor: pointer;
 }
 
 .ulNavBar hr{
@@ -67,16 +73,60 @@
 
 .ulNavBar li,
 .ulNavBar a{
-    padding: .5em;
+    padding: .8em;
     color: #ffe8e8;
     font-size: large;
 }
 
 .ulNavBar li:hover{
-    background-color:rgb(123, 56, 161);
+    background-color:rgba(122, 56, 161, 0.521);
     transition: 1s;
     opacity: 0;
     border-radius: 50%;
+}
+
+.changeNav li{
+    opacity: 0;
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+.changeNav img{
+    opacity: 0;
+    animation: slideDown 1s .5s ease-in-out forwards;
+}
+
+.changeNav{
+    opacity: 0;
+    animation: slideDown 2s .5s ease-in-out forwards;
+} 
+
+.changeNav1{
+    opacity: 0;
+    animation: slideDown 2s .5s ease-in-out forwards;
+
+}
+
+.changeNav2{
+    opacity: 0;
+    animation: slideDown 2s 1.5s ease-in-out forwards;
+
+}
+
+.changeNav3{
+    opacity: 0;
+    animation: slideDown 2s 2s ease-in-out forwards;
+
+} 
+
+@keyframes slideDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 970px){
@@ -85,26 +135,8 @@
     }
 }
 
-@media screen and (max-width: 770px) {
 
-    .navBar img{
-        padding-left: 1rem;
-    }
-
-    .ulNavBar li{
-        padding-left: 2px;
-    }
-
-    .ulNavBar{
-        margin-right: 2rem;
-    }
-
-    .selectLanguage{
-        margin-right: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 677px) {
+@media screen and (max-width: 800px) {
     .menu div{
         width: 35px;
         height: 3px;
@@ -126,14 +158,9 @@
         cursor: pointer;
         border: none;
     }
-    
-    .active hr{
-        width: 50%;
-        opacity: .5;
-    }
-    
-    .active{
-        transition: all 1s ease;
+
+    .active,
+    .active div{
         position: fixed;
         background-color: rgba(25, 25, 25, .7);
         display: flex;
@@ -141,17 +168,25 @@
         align-items: center;
         justify-content: center;
         top: 4.5rem;
-        width: 100vw;
+        width: 100%;
         height: calc(100% - 4.5rem);
         list-style: none;
     }
 
-    .active li,
-    .active a{
-        line-height: 4rem;
+    .active li {
         color: #ffffff;
-        font-size: .5rem;
+        font-size: 1.5rem;
         text-decoration: none;
+    }
+
+    .active a{
+        font-size: 1.5rem;
+    }
+
+    .active hr{
+        display: flex;
+        width: 30%;
+        color: aliceblue;
     }
 
 }
