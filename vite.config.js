@@ -7,6 +7,9 @@ dotenv.config();
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.png'], // Agrega '.png' a las extensiones admitidas
+  }
   // plugins: [reactRefresh()],
 });
 
