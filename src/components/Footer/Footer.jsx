@@ -1,9 +1,12 @@
+import Style from './Footer.module.css'
 import React from 'react'
 
 export default function Footer() {
   return (
-    <footer>
-        <small>&copy; Copyright 2018, Example Corporation</small>
+    <footer className={Style.footer}>
+      <div>
+        <p>&copy;2023 Flo's - <span>Copyright All rights reserved. </span></p>
+      </div>
     </footer>
   )
 }

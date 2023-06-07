@@ -12,6 +12,7 @@ import MiddleLanding from "./MiddleComponents/MiddleLanding/MiddleLanding";
 import MiddleHome from "./MiddleComponents/MiddleHome/MiddleHome";
 import MiddleExperience from "./MiddleComponents/MiddleExperience/MiddleExperience";
 import MiddleContact from "./MiddleComponents/MiddleContact/MiddleContact";
+import Footer from "./Footer/Footer";
 
 //<---------------------IMAGENES------------------->
 import logo from '../images/coverBlancoRelleno.png'
@@ -43,8 +44,18 @@ import image12 from '../images/parallax/homemedioOver.png'
 import image13 from '../images/parallax/contactmedioBack.png'
 import image14 from '../images/parallax/contactmedio.png'
 import image15 from '../images/parallax/contactmedioOver.png'
+import image16 from '../images/parallax/experience.png'
+import image17 from '../images/parallax/experience2.png'
+import image18 from '../images/parallax/experience3.png'
+import image19 from '../images/parallax/experience4.png'
+import image20 from '../images/parallax/setskill.png'
+import image21 from '../images/parallax/setskill2.png'
+import image22 from '../images/parallax/setskill3.png'
+import image23 from '../images/parallax/setskill4.png'
 import resume from '../images/resume.png'
 import profile from '../images/FotoPerfil.jpeg'
+import vnet from '../images/logoVnet.jpg'
+import henry from '../images/logoHenry.png'
 
 //<----------------------MUI ICONS----------------------->
 import LocationCityIcon from '@mui/icons-material/LocationCity';
@@ -76,6 +87,7 @@ export {
     MiddleHome,
     MiddleContact,
     MiddleExperience,
+    Footer,
     logo,
     GitHub,
     linkdn,
@@ -105,8 +117,18 @@ export {
     image13,
     image14,
     image15,
+    image16,
+    image17,
+    image18,
+    image19,
+    image20,
+    image21,
+    image22,
+    image23,
     resume,
     profile,
+    vnet,
+    henry,
     LocationCityIcon,
     BusinessCenterIcon,
     SendIcon,

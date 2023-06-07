@@ -6,6 +6,7 @@
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    margin-top: -5rem;
 }
 
 .projects h1 {
@@ -159,9 +160,6 @@
 
 @media screen and (max-width: 1000px){
 
-    .container{
-        flex-direction: column;
-       }
 
     .projects{
         padding-top: 500px;
@@ -171,9 +169,15 @@
         gap: 5rem
     }
 }
+@media screen and (max-width: 850px){
+
+
+    .container{
+        flex-direction: column;
+       }
+}
 
 @media screen and (max-width: 450px){
-    
     .capa{
         padding: .5rem;
         font-size: .9rem;
@@ -182,6 +186,7 @@
     .projects{
         padding-top: 300px;
         gap: 2rem;
+        margin-top: 0;
     }
     .container{
         gap: 5rem

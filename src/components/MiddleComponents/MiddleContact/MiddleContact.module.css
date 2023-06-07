@@ -1,0 +1,57 @@
+
+.middleContact div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    gap: 2rem;
+    margin-top: 4rem;
+    color: aliceblue;
+}
+
+.middleContact section{
+    width: 70%;
+    height: auto;
+    backdrop-filter: blur(30px);
+    border: solid 2px aliceblue;
+    border-radius: 10px;
+    border-left-width: 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.middleContact h3{
+    text-shadow: 1px 1px 3px #333;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.middleContact p{
+    font-size: larger;
+    text-shadow: 1px 1px 3px #333;
+}
+
+
+.animationMiddleC{
+    opacity: 0;
+    animation: upper 1s .5s ease-in-out forwards;
+}
+.animationMiddleC2{
+    opacity: 0;
+    animation: upper 1s 1.5s ease-in-out forwards;
+}
+.animationMiddleC3{
+    opacity: 0;
+    animation: upper 1s 2s ease-in-out forwards;
+}
+
+@keyframes upper {
+    0% {
+        transform: translateY(50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+}

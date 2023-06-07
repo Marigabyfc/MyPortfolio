@@ -37,6 +37,19 @@
 .selectLanguage {
     display: flex;
     align-items: center;
+    opacity: 0;
+    animation: slideright 1s 3s ease-in-out forwards;
+}
+
+@keyframes slideright {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .firstSelect option{
@@ -54,10 +67,21 @@
     height: 2em;
     color: #ffe8e8;
     font-size: medium;
+    cursor: pointer;
+}
+
+.selectLanguage select:hover{
+    color: #7a5cff;
+    transition: .5s;
 }
 
 .icon{
     color: #ffe8e8;
+}
+
+.icon:hover{
+    color: #7a5cff;
+    transition: .5s;
 }
 
 .navBar h2{
@@ -78,45 +102,62 @@
     font-size: large;
 }
 
-.ulNavBar li:hover{
-    background-color:rgba(122, 56, 161, 0.521);
-    transition: 1s;
-    opacity: 0;
-    border-radius: 50%;
+.ulNavBar a:hover{
+    color: #7a5cff;
+    transition: .5s;
 }
 
-.changeNav li{
-    opacity: 0;
-    animation: slideDown 1s ease-in-out forwards;
-}
 
 .changeNav img{
     opacity: 0;
     animation: slideDown 1s .5s ease-in-out forwards;
 }
 
-.changeNav{
-    opacity: 0;
-    animation: slideDown 2s .5s ease-in-out forwards;
-} 
 
-.changeNav1{
-    opacity: 0;
-    animation: slideDown 2s .5s ease-in-out forwards;
-
+#logo{
+    /* opacity: 0;
+    animation: slideleft 1s 2s ease-in-out forwards; */
+    /* transition: .5s, color.10s; */ 
+    transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    cursor: pointer;  
 }
 
-.changeNav2{
-    opacity: 0;
-    animation: slideDown 2s 1.5s ease-in-out forwards;
-
+#logo:hover{
+         transform: scale(1.1);
 }
 
-.changeNav3{
+#li1{
     opacity: 0;
-    animation: slideDown 2s 2s ease-in-out forwards;
+    animation: slideDown 1s  ease-in-out forwards;
+}
 
-} 
+#li2{
+    opacity: 0;
+    animation: slideDown 1s .5s ease-in-out forwards;
+}
+
+#li3{
+    opacity: 0;
+    animation: slideDown 1s 1s ease-in-out forwards;
+}
+
+#li4{
+    opacity: 0;
+    animation: slideDown 1s 1.5s ease-in-out forwards;
+}
+
+@keyframes slideleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 @keyframes slideDown {
     0%{
@@ -143,6 +184,8 @@
         margin: 5px;
         border-radius: 10px;
         background-color: #ffe8e8;
+        opacity: 0;
+        animation: slideright 1s 1 2s ease-in-out forwards;
     }
 
     .icon{
@@ -159,8 +202,7 @@
         border: none;
     }
 
-    .active,
-    .active div{
+    .active{
         position: fixed;
         background-color: rgba(25, 25, 25, .7);
         display: flex;
@@ -171,12 +213,32 @@
         width: 100%;
         height: calc(100% - 4.5rem);
         list-style: none;
+        animation: appear .5s ease-in-out forwards;
     }
 
+    @keyframes appear {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+
     .active li {
+        line-height: 2.5rem;
         color: #ffffff;
         font-size: 1.5rem;
         text-decoration: none;
+        transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+        cursor: pointer;
+    }
+
+    .active li:hover{
+        transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
     }
 
     .active a{
@@ -189,5 +251,24 @@
         color: aliceblue;
     }
 
+    #li1{
+        animation: none;
+        opacity: 1;
+    }
+    
+    #li2{
+       animation: none;
+       opacity: 1;
+    }
+    
+    #li3{
+        animation: none;
+        opacity: 1;
+    }
+    
+    #li4{
+        animation: none;
+        opacity: 1;
+    }
 }
 

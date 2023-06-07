@@ -1,0 +1,93 @@
+.middleHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 2rem;
+    margin-top: 4rem;
+    color: aliceblue;
+}
+.firstDivMid,
+.secondDivMid{
+    gap: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+    padding: 4rem 0 4rem 4rem;
+    font-size: 1.2rem;
+}
+
+.firstDivMid{
+    justify-content: start;
+    margin-left: 3rem;
+}
+
+.secondDivMid{
+    justify-content: end;
+}
+
+#sectionMid1,
+#sectionMid4{
+    margin-left: 5rem;
+}
+
+.middleHome section{
+    width: 75%;
+    height: auto;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: solid 1px rgb(123, 56, 161);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+
+.firstDivMidanimation #sectionMid1{
+    opacity: 0;
+    animation: slideleft 1.5s .5s ease-in-out forwards;
+}
+.firstDivMidanimation #sectionMid2{
+    opacity: 0;
+    animation: slideleft 1.5s 2s ease-in-out forwards;
+}
+.firstDivMidanimation #sectionMid3{
+    opacity: 0;
+    animation: slideright 1.5s 2.8s ease-in-out forwards;
+}
+.firstDivMidanimation #sectionMid4{
+    opacity: 0;
+    animation: slideright 1.5s 1.5s ease-in-out forwards;
+}
+
+
+
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0);
+      }
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0);
+      }
+}
+
+@media screen and (max-width: 1000px) {
+    .middleHome{
+        display: none;
+    }
+}

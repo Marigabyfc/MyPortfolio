@@ -6,11 +6,9 @@ import { useInView } from 'react-intersection-observer'
 
 export default function NavBar() {
 
-  const { ref : firstRef, inView: firstView } = useInView(/* {triggerOnce: true} */)
-
-  const { ref : secondRef, inView: secondView } = useInView(/* {triggerOnce: true} */)
-
   const [fix, setFix] = useState(false)
+
+  const { ref: firstRef, inView: firstInView } = useInView({triggerOnce: true})
 
  function setFixed(){
     if (window.scrollY >= 200) {
@@ -33,37 +31,35 @@ export default function NavBar() {
   return (
     <header>
       <nav ref={firstRef} className={Style.navBar}>
-      <figure  /* className={firstView ? Style.changeNav : ''} */>
+      <figure id={Style.logo}>
         <a href="#landing">
           <img src={logo} alt="logo" width='140px'/>
         </a>
       </figure>
-        <ul  className={`${Style.ulNavBar} ${firstView ? Style.changeNav : null}` }>
-          {/* <div className={`${Style.uldiv} ${firstView ? Style.changeNav : null}`}> */}
-          <li className={firstView ? Style.changeNav : null}>
+        <ul  className={`${Style.ulNavBar} ${open ? Style.active : null}` }>
+          <li id={firstInView ? Style.li1 : ''}>
             <a href='#home' onClick={click}>
               Home
             </a>
           </li>
             <hr />
-          <li>
+          <li id={firstInView ? Style.li2 : ''}>
             <a  href='#contact' onClick={click}>
               Contact
             </a>
           </li>
             <hr />
-          <li>
+          <li id={firstInView ? Style.li3 : ''}>
             <a href='#experience' onClick={click}>
               Experience
             </a>
           </li>
             <hr />
-          <li>
+          <li id={firstInView ? Style.li4 : ''}>
             <a href='#skillset' onClick={click}>
               Skill Set
             </a>
           </li>
-          {/* </div> */}
         </ul>   
           <div className={Style.selectLanguage}>
             <TranslateIcon className={Style.icon}/>

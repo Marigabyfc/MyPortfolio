@@ -67,3 +67,9 @@ button:hover{
         transform: translateX(0);
     }
 }
+
+@media screen and (max-width: 850px) {
+    .pruebita{
+        display: none;
+    }
+}
