@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {Contact, Experience, NavBar, SkillSet, Home, Landing,  resume, profile,/*  image1, image2, 
+import {Contact, Experience, NavBar, SkillSet, Home, Landing,  resume, profile, henry,/*  image1, image2, 
   image4, image5, image6, image7, image8, image9, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, */ MiddleLanding, MiddleHome, MiddleContact, Footer} from './components/views.js'
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { useInView } from 'react-intersection-observer'
@@ -36,14 +36,9 @@ return (
       </ParallaxLayer>  
       
       <ParallaxLayer offset={1} speed={1}>
-         <img src={profile} alt="que guebo nojoda"/>
+         <img src={profile} alt="que guebo nojoda" width='300px'/>
       </ParallaxLayer>
 
-      {/* <ParallaxLayer offset={1} speed={0.5}>
-        <figure>
-         <img src={image2} alt=""/>
-        </figure>
-      </ParallaxLayer> */}
       
       <ParallaxLayer  offset={1} speed={1}>
         <div ref={firstRef} className={firstView ? 'inViewHome' : ''}>
@@ -56,7 +51,7 @@ return (
       </ParallaxLayer>
      
       <ParallaxLayer  offset={1.95} speed={0.8}  className='pruebita'>
-        <img src={image12} alt="" />
+      <img src={image12} alt="" />
       </ParallaxLayer> */}
 
        <ParallaxLayer  offset={1.95} speed={1} className='pruebita'>
@@ -65,6 +60,9 @@ return (
         </div>
       </ParallaxLayer>
 
+      <ParallaxLayer offset={2} speed={0.5}>
+        <img src={henry} alt="" width='300px'/>
+     </ParallaxLayer> 
       {/* <ParallaxLayer  offset={2} speed={0.5}>
         <figure>
          <img src={image4} alt=""/>
