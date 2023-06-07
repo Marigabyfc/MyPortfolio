@@ -1,30 +1,9 @@
 import React from 'react'
 import './App.css'
-import {Contact, Experience, NavBar, SkillSet, Home, Landing, /* image1, image2, 
-  image4, image5, image6, image7, image8, image9, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, */ MiddleLanding, MiddleHome, MiddleContact, Footer} from './components/views.js'
+import {Contact, Experience, NavBar, SkillSet, Home, Landing, image1, image2, 
+  image4, image5, image6, image7, image8, image9, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, MiddleLanding, MiddleHome, MiddleContact, Footer} from './components/views.js'
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { useInView } from 'react-intersection-observer'
-import image1 from './images/parallax/acolor.png'
-import image2 from './images/parallax/acolorOver.png'
-import image4 from './images/parallax/contactOver.png'
-import image5 from './images/parallax/contactBack.png'
-// import image6 from '../images/parallax/figuritas.png'
-// import image7 from '../images/parallax/figuritas2.png'
-import image8 from './images/parallax/landingmedio.png'
-import image9 from './images/parallax/landingmedioOver.png'
-import image11 from './images/parallax/homemedio.png'
-import image12 from './images/parallax/homemedioOver.png'
-// import image13 from './images/parallax/contactmedioBack.png'
-import image14 from './images/parallax/contactmedio.png'
-import image15 from './images/parallax/contactmedioOver.png'
-import image16 from './images/parallax/experience.png'
-import image17 from './images/parallax/experience2.png'
-import image18 from './images/parallax/experience3.png'
-import image19 from './images/parallax/experience4.png'
-import image20 from './images/parallax/setskill.png'
-import image21 from './images/parallax/setskill2.png'
-import image22 from './images/parallax/setskill3.png'
-import image23 from './images/parallax/setskill4.png'
 
 function App() {
 
@@ -109,9 +88,9 @@ return (
         </ParallaxLayer>
         
 
-        {/* <ParallaxLayer  offset={2.95} speed={1}>
+        <ParallaxLayer  offset={2.95} speed={1}>
           <img src={image13} alt="" />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
         
         <ParallaxLayer  offset={2.95} speed={1.8}>
           <img src={image14} alt="" />
