@@ -44,6 +44,41 @@
     padding-left: 3rem;
 }
 
+.firstFigure figure{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.secondFigure figure{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.firstFigure,
+.secondFigure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstFigureDiv ,
+.secondFigureDiv {
+    background-color: #333;
+    border: solid 1px  rgb(123, 56, 161);
+    width: 60%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.experience figure img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+
 .column{
     display: flex;
     flex-direction: column;

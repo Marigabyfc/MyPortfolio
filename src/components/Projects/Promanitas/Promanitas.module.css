@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
+    /* background-color: rgba(0, 0, 0, 0.75); */
     justify-content: center;
     display: flex;
     align-items: center;
@@ -21,15 +21,33 @@
     min-height: 200px;
     overflow-y: hidden;
     background-color: aliceblue;
-}
-/* 
-.isOpen{
-    scrollbar-width: none; 
+    animation: popUp 1s ease-in-out forwards;
 }
 
-.isOpen::-webkit-scrollbar {
-    width: 0;
-   } */
+@keyframes popUp {
+    0%{
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5)
+    }
+    50%  {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1)
+      }
+      100%  {
+          -webkit-transform: scale(1);
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -ms-transform: scale(1);
+        transform: scale(1)
+      }
+}
+
 
 .isClose {
     display: none;

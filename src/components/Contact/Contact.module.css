@@ -26,10 +26,10 @@
 }
 
 .contactImg img{
-    transition: .5s, color .10s;
+  transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 .contactImg img:hover{
@@ -48,7 +48,7 @@
 }
 
 .contact div p{
-    font-size: large;
+    font-size: larger;
 }
 
 .imgAnimation img{
@@ -103,6 +103,11 @@
         margin-top: 15px;
     }
 
+    .contact{
+        padding: 4rem;
+        margin-top: -15rem;
+    }
+
     .contactImg img{
         padding: 15px;
     }
@@ -113,6 +118,5 @@
 
     .contact section{
         gap: 0;
-        margin-top: 6rem;
     }
 }

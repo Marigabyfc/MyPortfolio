@@ -15,7 +15,7 @@ export default function Contact() {
       <section className={Style.contactSection}>
         <div ref={firstRef} className={`${Style.contactH2} ${firstView ? Style.contactA : ''}`}>
           <h2>Contact</h2>
-          <p>Contact me if you want us to work together.</p>
+          <p>Don't be a stranger, connect with me online👋. Or contact me if you want us to work together.</p>
         </div>
         <figure  className={`${Style.contactImg} ${firstView ? Style.imgAnimation : ''}`}>
           <img src={Mail} alt="Outlook" width='90px' onClick={openModal}/>

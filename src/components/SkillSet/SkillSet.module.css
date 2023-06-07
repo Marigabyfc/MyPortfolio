@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -20rem;
 }
 
 .skillsContainer{
@@ -52,14 +53,24 @@
   transition: .5s ease-out;
   color: rgb(123, 56, 161);
 }
-/* 
-.icon .arrowNext{
- display: flex;
+
+.leftArrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
 }
 
-.icon .arrowPrev{
+.rightArrow {
   position: absolute;
-} */
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 400px) {
   .activeSlide{

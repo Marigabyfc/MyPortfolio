@@ -1,7 +1,7 @@
 import Style from './Experience.module.css'
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-
+import { vnet, henry } from '../views'
 
 export default function Experience() {
 
@@ -22,9 +22,14 @@ export default function Experience() {
           <li>Company-paid training in commercial advising and public relations management</li>
           <li>Supervision of installation and construction teams under my guidance</li>
         </ul>
-          <a href="https://www.vnet.com.ve/" target='_blank'><button>See Website</button></a>
+          <a href="https://www.vnet.com.ve/" target='_blank'><button>Visit Website</button></a>
           </div>
       </section>
+      {/* <div className={Style.firstFigureDiv}>
+            <figure className={Style.firstFigure}>
+              <img src={vnet} alt="" />
+            </figure>
+      </div> */}
       <section  ref={secondRef} className={`${Style.secondSection} ${secondView ? Style.expAnimated2 : ''}`}>
         <div>
           <h2>Teaching Assistant <span>(Feb 2023- Apr 2023)</span></h2>
@@ -37,9 +42,14 @@ export default function Experience() {
           <li>Promote group cohesion and community building</li>
           <li>Soft Skills training</li>
         </ul>
-        <a href="https://www.soyhenry.com/" target='_blank'><button>See Website</button></a>
+        <a href="https://www.soyhenry.com/" target='_blank'><button>Visit Website</button></a>
           </div>
       </section>
+      {/* <div className={Style.secondFigureDiv}>
+          <figure className={Style.secondFigure}>
+            <img src={henry} alt="" />
+          </figure>
+      </div> */}
     </article>
   )
 }

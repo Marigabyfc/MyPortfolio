@@ -26,16 +26,32 @@
     background-color: #333;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
     overflow-y: auto;
-    animation: popUp 1.5s ease-in-out forwards;
+    animation: popUp 1s ease-in-out forwards;
 }
+
 
 @keyframes popUp {
     0%{
-        transform: scale(30px);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5)
     }
-    100%{
-        transform: scale(0px);
-    }
+    50%  {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1)
+      }
+      100%  {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+      }
 }
 
 .firstDiv{
@@ -128,6 +144,8 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #333 inset;
     -webkit-text-fill-color: aliceblue;
+    outline: none;
+
 }
 
 
@@ -170,7 +188,6 @@ input:-webkit-autofill:focus {
     transition: 0.5s;
     color: aliceblue;
 }
-
 
 
 

@@ -2,6 +2,7 @@ import Style from './ContactModal.module.css'
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { SendIcon, BusinessCenterIcon, MailIcon, LocationCityIcon, Swal, VITE_PUBLIC_KEY, VITE_SERVICE_ID, VITE_TEMPLATE_ID, profile } from '../../views';
+import { DotSpinner } from '@uiball/loaders'
 
 
 export default function ContactModal({open, closeModal}) {
@@ -14,6 +15,8 @@ export default function ContactModal({open, closeModal}) {
     message: ''
   })
 
+  const [isSending, setIsSending] = useState(false);
+
   const handleChange = (e) => {
     setNewForm({
       ...newForm,
@@ -25,6 +28,7 @@ export default function ContactModal({open, closeModal}) {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs.sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form.current, VITE_PUBLIC_KEY)
       .then((result) => {
@@ -40,6 +44,7 @@ export default function ContactModal({open, closeModal}) {
             company: '',
             message: ''
           })
+          setIsSending(false)
           closeModal()
       }, (error) => {
           console.log(error.text);
@@ -79,10 +84,22 @@ export default function ContactModal({open, closeModal}) {
                     <textarea name="message" rows="3" required value={newForm.message} onChange={handleChange}></textarea>
                   </p>
                   <p className={Style.block}>
-                    <button type='submit' value="Send">
-                      <span className={Style.icon}><SendIcon/></span>
-                       <span className={Style.text}>Send</span>
-                       </button>
+                     {isSending ? (
+                        <button type="button" disabled>
+                          <DotSpinner 
+                          size={40}
+                          speed={0.9} 
+                          color="white" 
+                          />
+                        </button>
+                      ) : (
+                        <button type="submit" value="Send">
+                          <span className={Style.icon}>
+                            <SendIcon />
+                          </span>
+                          <span className={Style.text}>Send</span>
+                        </button>
+                      )}
                   </p>
                 </form>
               </div>
@@ -100,10 +117,10 @@ export default function ContactModal({open, closeModal}) {
                       <LocationCityIcon/>
                       <li>Argentina, Buenos Aires, CABA</li>
                       </div>
-                      <div>
+                      {/* <div>
                         <MailIcon/>
-                      <li>marianag_flores@hotmail.com</li>
-                      </div>
+                      <li></li>
+                      </div> */}
                     </ul>
                     <p>Hi! it's a pleasure to have you here at this stage of my portfolio. We can get in touch by leaving your contact information and message, which will be sent to my email. I'll be happy to respond.</p>
                 </div>
