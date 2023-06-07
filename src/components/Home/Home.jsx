@@ -1,8 +1,7 @@
 import Style from './Home.module.css'
 import React, {useState} from 'react'
 import { MarigabyFoods, Promanitas } from '../views'
-import foods from '../../images/MarigabyFoods.jpeg'
-import promanitas from '../../images/Promanitas.png'
+import { foods, promanitas } from '../views'
 import { useClick } from '../Hooks/useClick'
 import SearchIcon from '@mui/icons-material/Search';
 import { useInView } from 'react-intersection-observer';
