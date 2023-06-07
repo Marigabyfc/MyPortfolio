@@ -14,7 +14,7 @@ import image8 from './images/parallax/landingmedio.png'
 import image9 from './images/parallax/landingmedioOver.png'
 import image11 from './images/parallax/homemedio.png'
 import image12 from './images/parallax/homemedioOver.png'
-import image13 from './images/parallax/contactmedioBack.png'
+// import image13 from './images/parallax/contactmedioBack.png'
 import image14 from './images/parallax/contactmedio.png'
 import image15 from './images/parallax/contactmedioOver.png'
 import image16 from './images/parallax/experience.png'
@@ -109,9 +109,9 @@ return (
         </ParallaxLayer>
         
 
-        <ParallaxLayer  offset={2.95} speed={1}>
+        {/* <ParallaxLayer  offset={2.95} speed={1}>
           <img src={image13} alt="" />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         
         <ParallaxLayer  offset={2.95} speed={1.8}>
           <img src={image14} alt="" />
