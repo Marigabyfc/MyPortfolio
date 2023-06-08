@@ -36,7 +36,7 @@ return (
       </ParallaxLayer>  
       
       <ParallaxLayer offset={1} speed={1}>
-         <img src={image1} alt="que guebo nojoda" width='300px'/>
+         <img src={image1} alt="que guebo nojoda"/>
       </ParallaxLayer>
 
       
