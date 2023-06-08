@@ -33,7 +33,7 @@ import Ts from '../assets/typescript.png'
 import MySql from '../assets/mysql.png'
 import foods from '../assets/MarigabyFoods.jpeg'
 import promanitas from '../assets/Promanitas.png'
-// import image1 from '../assets/acolor.png'
+import image1 from '../assets/acolor_optimized.png'
 // import image2 from '../assets/acolorOver.png'
 // import image4 from '../assets/contactOver.png'
 // import image5 from '../assets/contactBack.png'
@@ -108,7 +108,7 @@ export {
     MySql,
     foods,
     promanitas,
-    // image1,
+    image1,
     // image2,
     // image4,
     // image5,

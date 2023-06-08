@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {Contact, Experience, NavBar, SkillSet, Home, Landing, /*  image1, image2, 
+import {Contact, Experience, NavBar, SkillSet, Home, Landing, image1, /* image2, 
   image4, image5, image6, image7, image8, image9, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, */ MiddleLanding, MiddleHome, MiddleContact, Footer} from './components/views.js'
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import { useInView } from 'react-intersection-observer'
@@ -35,9 +35,9 @@ return (
         <MiddleLanding/>
       </ParallaxLayer>  
       
-      {/* <ParallaxLayer offset={1} speed={1}>
-         <img src={profile} alt="que guebo nojoda" width='300px'/>
-      </ParallaxLayer> */}
+      <ParallaxLayer offset={1} speed={1}>
+         <img src={image1} alt="que guebo nojoda" width='300px'/>
+      </ParallaxLayer>
 
       
       <ParallaxLayer  offset={1} speed={1}>
