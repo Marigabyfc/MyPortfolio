@@ -6,7 +6,7 @@ import Slider from 'react-slick'
 
 export default function SkillSet() {
 
-  const images = [Css, Html, Js, Sequelize, Postgre, Node, ReactJs, Redux, Ts, MySql]
+  const images = [Js, Css, Html, Sequelize, Postgre, Node, ReactJs, Redux, Ts, MySql]
   
   const [imageIndex, setImageIndex] = useState(0); 
 
