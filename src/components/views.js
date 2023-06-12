@@ -36,7 +36,7 @@ import promanitas from '../assets/Promanitas.png'
 import image1 from '../assets/parallax/acolor_optimized.png'
 import image2 from '../assets/parallax/acolorOver-min.png'
 import image3 from '../assets/parallax/contactOver-min.png'
-// import image5 from '../assets/parallax/contactBack_optimized.png'
+import image5 from '../assets/parallax/contactBack-min.png'
 // import image6 from '../assets/parallax/figuritas_optimized.png'
 // import image7 from '../assets/parallax/figuritas2_optimized.png'
 // import image8 from '../assets/parallax/landingmedio_optimized.png'
@@ -111,7 +111,7 @@ export {
     image1,
     image2,
     image3,
-    // image5,
+    image5,
     // image6,
     // image7,
     // image8,
