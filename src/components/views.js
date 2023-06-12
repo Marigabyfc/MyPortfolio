@@ -40,12 +40,12 @@ import image5 from '../assets/parallax/contactBack-min.png'
 import image6 from '../assets/parallax/figuritas-min.png'
 import image7 from '../assets/parallax/figuritas2-min.png'
 import image8 from '../assets/parallax/landingmedio-min.png'
-// import image9 from '../assets/parallax/landingmedioOver-min.png'
-// import image11 from '../assets/parallax/homemedio-min.png'
-// import image12 from '../assets/parallax/homemedioOver-min.png'
-// import image13 from '../assets/parallax/contactmedioBack-min.png'
-// import image14 from '../assets/parallax/contactmedio-min.png'
-// import image15 from '../assets/parallax/contactmedioOver-min.png'
+import image9 from '../assets/parallax/landingmedioOver-min.png'
+import image11 from '../assets/parallax/homemedio-min.png'
+import image12 from '../assets/parallax/homemedioOver-min.png'
+import image13 from '../assets/parallax/contactmedioBack-min.png'
+import image14 from '../assets/parallax/contactmedio-min.png'
+import image15 from '../assets/parallax/contactmedioOver-min.png'
 // import image16 from '../assets/parallax/experience-min.png'
 // import image17 from '../assets/parallax/experience2-min.png'
 // import image18 from '../assets/parallax/experience3-min.png'
@@ -115,12 +115,12 @@ export {
     image6,
     image7,
     image8,
-    // image9,
-    // image11,
-    // image12,
-    // image13,
-    // image14,
-    // image15,
+    image9,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
     // image16,
     // image17,
     // image18,
