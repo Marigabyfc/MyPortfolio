@@ -51,8 +51,8 @@ import image17 from '../assets/parallax/experience2-min.png'
 import image18 from '../assets/parallax/experience3-min.png'
 import image19 from '../assets/parallax/experience4-min.png'
 import image20 from '../assets/parallax/setskill-min.png'
-// import image21 from '../assets/parallax/setskill2-min.png'
-// import image22 from '../assets/parallax/setskill3-min.png'
+import image21 from '../assets/parallax/setskill2-min.png'
+import image22 from '../assets/parallax/setskill3-min.png'
 import image23 from '../assets/parallax/setskill4-min.png'
 import resume from '../assets/resume.png'
 import profile from '../assets/FotoPerfil.jpeg'
@@ -126,8 +126,8 @@ export {
     image18,
     image19,
     image20,
-    // image21,
-    // image22,
+    image21,
+    image22,
     image23,
     resume,
     profile,
