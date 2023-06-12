@@ -35,25 +35,25 @@ import foods from '../assets/MarigabyFoods.jpeg'
 import promanitas from '../assets/Promanitas.png'
 import image1 from '../assets/parallax/acolor_optimized.png'
 import image2 from '../assets/parallax/acolorOver_optimized.png'
-import image4 from '../assets/parallax/contactOver_optimized.png'
-import image5 from '../assets/parallax/contactBack_optimized.png'
-import image6 from '../assets/parallax/figuritas_optimized.png'
-import image7 from '../assets/parallax/figuritas2_optimized.png'
-import image8 from '../assets/parallax/landingmedio_optimized.png'
-import image9 from '../assets/parallax/landingmedioOver_optimized.png'
-import image11 from '../assets/parallax/homemedio_optimized.png'
-import image12 from '../assets/parallax/homemedioOver_optimized.png'
-import image13 from '../assets/parallax/contactmedioBack_optimized.png'
-import image14 from '../assets/parallax/contactmedio_optimized.png'
-import image15 from '../assets/parallax/contactmedioOver_optimized.png'
-import image16 from '../assets/parallax/experience_optimized.png'
-import image17 from '../assets/parallax/experience2_optimized.png'
-import image18 from '../assets/parallax/experience3_optimized.png'
-import image19 from '../assets/parallax/experience4_optimized.png'
-import image20 from '../assets/parallax/setskill_optimized.png'
-import image21 from '../assets/parallax/setskill2_optimized.png'
-import image22 from '../assets/parallax/setskill3_optimized.png'
-import image23 from '../assets/parallax/setskill4_optimized.png'
+// import image4 from '../assets/parallax/contactOver_optimized.png'
+// import image5 from '../assets/parallax/contactBack_optimized.png'
+// import image6 from '../assets/parallax/figuritas_optimized.png'
+// import image7 from '../assets/parallax/figuritas2_optimized.png'
+// import image8 from '../assets/parallax/landingmedio_optimized.png'
+// import image9 from '../assets/parallax/landingmedioOver_optimized.png'
+// import image11 from '../assets/parallax/homemedio_optimized.png'
+// import image12 from '../assets/parallax/homemedioOver_optimized.png'
+// import image13 from '../assets/parallax/contactmedioBack_optimized.png'
+// import image14 from '../assets/parallax/contactmedio_optimized.png'
+// import image15 from '../assets/parallax/contactmedioOver_optimized.png'
+// import image16 from '../assets/parallax/experience_optimized.png'
+// import image17 from '../assets/parallax/experience2_optimized.png'
+// import image18 from '../assets/parallax/experience3_optimized.png'
+// import image19 from '../assets/parallax/experience4_optimized.png'
+// import image20 from '../assets/parallax/setskill_optimized.png'
+// import image21 from '../assets/parallax/setskill2_optimized.png'
+// import image22 from '../assets/parallax/setskill3_optimized.png'
+// import image23 from '../assets/parallax/setskill4_optimized.png'
 import resume from '../assets/resume.png'
 import profile from '../assets/FotoPerfil.jpeg'
 import vnet from '../assets/logoVnet.jpg'
@@ -110,25 +110,25 @@ export {
     promanitas,
     image1,
     image2,
-    image4,
-    image5,
-    image6,
-    image7,
-    image8,
-    image9,
-    image11,
-    image12,
-    image13,
-    image14,
-    image15,
-    image16,
-    image17,
-    image18,
-    image19,
-    image20,
-    image21,
-    image22,
-    image23,
+    // image4,
+    // image5,
+    // image6,
+    // image7,
+    // image8,
+    // image9,
+    // image11,
+    // image12,
+    // image13,
+    // image14,
+    // image15,
+    // image16,
+    // image17,
+    // image18,
+    // image19,
+    // image20,
+    // image21,
+    // image22,
+    // image23,
     resume,
     profile,
     vnet,
