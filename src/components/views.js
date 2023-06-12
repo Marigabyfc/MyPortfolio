@@ -46,14 +46,14 @@ import image12 from '../assets/parallax/homemedioOver-min.png'
 import image13 from '../assets/parallax/contactMedioBack-min.png'
 import image14 from '../assets/parallax/contactMedio-min.png'
 import image15 from '../assets/parallax/contactmedioOver-min.png'
-// import image16 from '../assets/parallax/experience-min.png'
-// import image17 from '../assets/parallax/experience2-min.png'
-// import image18 from '../assets/parallax/experience3-min.png'
-// import image19 from '../assets/parallax/experience4-min.png'
-// import image20 from '../assets/parallax/setskill-min.png'
+import image16 from '../assets/parallax/experience-min.png'
+import image17 from '../assets/parallax/experience2-min.png'
+import image18 from '../assets/parallax/experience3-min.png'
+import image19 from '../assets/parallax/experience4-min.png'
+import image20 from '../assets/parallax/setskill-min.png'
 // import image21 from '../assets/parallax/setskill2-min.png'
 // import image22 from '../assets/parallax/setskill3-min.png'
-// import image23 from '../assets/parallax/setskill4-min.png'
+import image23 from '../assets/parallax/setskill4-min.png'
 import resume from '../assets/resume.png'
 import profile from '../assets/FotoPerfil.jpeg'
 import vnet from '../assets/logoVnet.jpg'
@@ -121,14 +121,14 @@ export {
     image13,
     image14,
     image15,
-    // image16,
-    // image17,
-    // image18,
-    // image19,
-    // image20,
+    image16,
+    image17,
+    image18,
+    image19,
+    image20,
     // image21,
     // image22,
-    // image23,
+    image23,
     resume,
     profile,
     vnet,
