@@ -37,23 +37,23 @@ import image1 from '../assets/parallax/acolor_optimized.png'
 import image2 from '../assets/parallax/acolorOver-min.png'
 import image3 from '../assets/parallax/contactOver-min.png'
 import image5 from '../assets/parallax/contactBack-min.png'
-// import image6 from '../assets/parallax/figuritas_optimized.png'
-// import image7 from '../assets/parallax/figuritas2_optimized.png'
-// import image8 from '../assets/parallax/landingmedio_optimized.png'
-// import image9 from '../assets/parallax/landingmedioOver_optimized.png'
-// import image11 from '../assets/parallax/homemedio_optimized.png'
-// import image12 from '../assets/parallax/homemedioOver_optimized.png'
-// import image13 from '../assets/parallax/contactmedioBack_optimized.png'
-// import image14 from '../assets/parallax/contactmedio_optimized.png'
-// import image15 from '../assets/parallax/contactmedioOver_optimized.png'
-// import image16 from '../assets/parallax/experience_optimized.png'
-// import image17 from '../assets/parallax/experience2_optimized.png'
-// import image18 from '../assets/parallax/experience3_optimized.png'
-// import image19 from '../assets/parallax/experience4_optimized.png'
-// import image20 from '../assets/parallax/setskill_optimized.png'
-// import image21 from '../assets/parallax/setskill2_optimized.png'
-// import image22 from '../assets/parallax/setskill3_optimized.png'
-// import image23 from '../assets/parallax/setskill4_optimized.png'
+import image6 from '../assets/parallax/figuritas-min.png'
+import image7 from '../assets/parallax/figuritas2-min.png'
+import image8 from '../assets/parallax/landingmedio-min.png'
+// import image9 from '../assets/parallax/landingmedioOver-min.png'
+// import image11 from '../assets/parallax/homemedio-min.png'
+// import image12 from '../assets/parallax/homemedioOver-min.png'
+// import image13 from '../assets/parallax/contactmedioBack-min.png'
+// import image14 from '../assets/parallax/contactmedio-min.png'
+// import image15 from '../assets/parallax/contactmedioOver-min.png'
+// import image16 from '../assets/parallax/experience-min.png'
+// import image17 from '../assets/parallax/experience2-min.png'
+// import image18 from '../assets/parallax/experience3-min.png'
+// import image19 from '../assets/parallax/experience4-min.png'
+// import image20 from '../assets/parallax/setskill-min.png'
+// import image21 from '../assets/parallax/setskill2-min.png'
+// import image22 from '../assets/parallax/setskill3-min.png'
+// import image23 from '../assets/parallax/setskill4-min.png'
 import resume from '../assets/resume.png'
 import profile from '../assets/FotoPerfil.jpeg'
 import vnet from '../assets/logoVnet.jpg'
@@ -112,9 +112,9 @@ export {
     image2,
     image3,
     image5,
-    // image6,
-    // image7,
-    // image8,
+    image6,
+    image7,
+    image8,
     // image9,
     // image11,
     // image12,
