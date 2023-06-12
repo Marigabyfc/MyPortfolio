@@ -34,7 +34,7 @@ import MySql from '../assets/mysql.png'
 import foods from '../assets/MarigabyFoods.jpeg'
 import promanitas from '../assets/Promanitas.png'
 import image1 from '../assets/parallax/acolor_optimized.png'
-// import image2 from '../assets/parallax/acolorOver_optimized.png'
+import image2 from '../assets/parallax/acolorOver-min.png'
 import image4 from '../assets/parallax/contactOver_optimized.png'
 // import image5 from '../assets/parallax/contactBack_optimized.png'
 // import image6 from '../assets/parallax/figuritas_optimized.png'
@@ -109,8 +109,8 @@ export {
     foods,
     promanitas,
     image1,
-    // image2,
-    image4,
+    image2,
+    // image4,
     // image5,
     // image6,
     // image7,
