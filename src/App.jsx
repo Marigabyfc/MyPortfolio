@@ -14,8 +14,8 @@ function App() {
   const { ref : thirdRef, inView: thirdView } = useInView()
   
   
-return (
-  <article >
+  return (
+    <article >
     <NavBar/>
    <Parallax pages={5}>
       <ParallaxLayer offset={0} speed={1.5} className='backgroundLayer'/>
@@ -116,7 +116,7 @@ return (
           <img src={image19} alt="" />
         </ParallaxLayer>
 
-        <ParallaxLayer  offset={3.25} speed={0}>
+        <ParallaxLayer  offset={3.25} speed={0.5}>
           <img src={image20} alt="" />
         </ParallaxLayer>
 
@@ -140,7 +140,7 @@ return (
           <SkillSet/>
         </ParallaxLayer>
         
-        <ParallaxLayer  offset={4} speed={1} >
+        <ParallaxLayer  offset={5} speed={1} >
           <Footer/>
         </ParallaxLayer>
         
