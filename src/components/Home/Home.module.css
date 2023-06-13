@@ -178,9 +178,8 @@
 }
 
 @media screen and (max-width: 450px){
-    .capa{
-        padding: .5rem;
-        font-size: .9rem;
+    .capa p{
+       display: none;
     }
 
     .projects{
@@ -192,18 +191,25 @@
         gap: 5rem
     }
 
-       .divProjects {
-        height: 300px;
-        width: 300px;
-    }
-    
-    .projects figure{
-        height: 150px;
+     .divProjects {
+        height: 220px;
         width: 250px;
     }
 
+    .projects button{
+        margin-top: 0;
+        height: 20px;
+        font-size: small;
+    }
+    
+    .projects figure{
+        height: 120px;
+        width: 200px;
+        border-radius: 5px;
+    }
+
     .projects hr{
-        width: 250px;
+        width: 200px;
         height: 2px;
     }
 

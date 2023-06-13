@@ -49,15 +49,15 @@ function App() {
         </div>
       </ParallaxLayer>
            
-      <ParallaxLayer  offset={1.95} speed={1} className='pruebita'>
+      <ParallaxLayer  offset={1.95} speed={1}>
         <img src={image11} alt=""  />
       </ParallaxLayer>
      
-      <ParallaxLayer  offset={1.95} speed={0.8}  className='pruebita'>
+      <ParallaxLayer  offset={1.95} speed={0.8} >
       <img src={image12} alt="" />
       </ParallaxLayer>
 
-       <ParallaxLayer  offset={1.95} speed={1} className='pruebita'>
+       <ParallaxLayer  offset={1.95} speed={1}>
         <MiddleHome />
       </ParallaxLayer>
 

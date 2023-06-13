@@ -18,11 +18,11 @@ export default function Contact() {
           <p>Don't be a stranger, connect with me online👋. Or contact me if you want us to work together.</p>
         </div>
         <figure  className={`${Style.contactImg} ${firstView ? Style.imgAnimation : ''}`}>
-          <img src={Mail} alt="Outlook" width='90px' onClick={openModal}/>
+          <img id={Style.img1} src={Mail} alt="Outlook"  onClick={openModal}/>
           <ContactModal open={clicked} closeModal={closeModal}/>
-          <a href="https://github.com/Marigabyfc" target='_blank'><img src={GitHub} alt="GitHub" width='160px'/></a>
-          <a href="https://twitter.com/marigabyfc" target='_blank'><img src={Twitter} alt="Twitter" className={Style.twitter}/></a>
-          <a href="https://www.linkedin.com/in/marigabyfc" target='_blank'><img src={linkdn} alt="Linkdn" width='120px'/></a>
+          <a href="https://github.com/Marigabyfc" target='_blank'><img id={Style.img2} src={GitHub} alt="GitHub" /></a>
+          <a href="https://twitter.com/marigabyfc" target='_blank'><img id={Style.img3} src={Twitter} alt="Twitter" className={Style.twitter}/></a>
+          <a href="https://www.linkedin.com/in/marigabyfc" target='_blank'><img id={Style.img4} src={linkdn} alt="Linkdn" /></a>
         </figure>
       </section>
     </article>
