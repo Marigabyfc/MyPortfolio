@@ -4,7 +4,7 @@ import { nav } from '../Language/language.json'
 import { logo, TranslateIcon } from '../views'
 import { useInView } from 'react-intersection-observer'
 
-export default function NavBar() {
+export default function NavBar({lan}) {
 
   const [fix, setFix] = useState(false)
 
@@ -38,9 +38,11 @@ export default function NavBar() {
       </figure>
         <ul  className={`${Style.ulNavBar} ${open ? Style.active : null}` }>
           <li id={firstInView ? Style.li1 : ''}>
-            <a href='#home' onClick={click}>
+            { lan ? <a href='#home' onClick={click}>
               Home
-            </a>
+            </a> : <a href='#home' onClick={click}>
+              Inicio
+            </a>}
           </li>
             <hr />
           <li id={firstInView ? Style.li2 : ''}>

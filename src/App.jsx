@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css'
 import {Contact, Experience, NavBar, SkillSet, Home, Landing, image1,  image2, image3,
  image5,  image6, image7, image8, image9, image11, image12, image13, image14, image15,  image16, image17, image18, image19, image20, image21, image22,  image23, MiddleLanding, MiddleHome, MiddleContact, Footer} from './components/views.js'
@@ -12,11 +12,19 @@ function App() {
   const { ref : secondRef, inView: secondView } = useInView({triggerOnce: true})
 
   const { ref : thirdRef, inView: thirdView } = useInView()
+
+  const [lan, setLan] = useState(false)
   
-  
+  const handleClick = (e) => {
+    setLan(!lan)
+    console.log(lan);
+    console.log("este es mi lan");
+  }
+
   return (
     <article >
-    <NavBar/>
+    <NavBar props={lan}/>
+    {/* <button onClick={handleClick} width="20px">click</button> */}
    <Parallax pages={5}>
       <ParallaxLayer offset={0} speed={1.5} className='backgroundLayer'/>
       <ParallaxLayer offset={0} speed={0.8}>
@@ -140,11 +148,8 @@ function App() {
           <SkillSet/>
         </ParallaxLayer>
         
-        <ParallaxLayer  offset={5} speed={1} >
-          <Footer/>
-        </ParallaxLayer>
-        
     </Parallax>
+          <Footer/>
 
   </article>
 
