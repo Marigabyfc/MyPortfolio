@@ -13,19 +13,13 @@ function App() {
 
   const { ref : thirdRef, inView: thirdView } = useInView()
 
-  const [lan, setLan] = useState(false)
   
-  const handleClick = (e) => {
-    setLan(!lan)
-    console.log(lan);
-    console.log("este es mi lan");
-  }
+
 
   return (
     <article >
-    <NavBar props={lan}/>
-    {/* <button onClick={handleClick} width="20px">click</button> */}
-   <Parallax pages={5}>
+    <NavBar />
+   <Parallax pages={6}>
       <ParallaxLayer offset={0} speed={1.5} className='backgroundLayer'/>
       <ParallaxLayer offset={0} speed={0.8}>
         <Landing/>
@@ -146,6 +140,13 @@ function App() {
 
         <ParallaxLayer  offset={4} speed={1}>
           <SkillSet/>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5} speed={1}>
+          <div className='divHola'>
+            <h2 >HOLA MUNDO</h2>
+            <h3>ESTO ES UNA PRUEBITA</h3>
+          </div>
         </ParallaxLayer>
         
     </Parallax>
