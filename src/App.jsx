@@ -19,7 +19,7 @@ function App() {
   return (
     <article >
     <NavBar />
-   <Parallax pages={6}>
+   <Parallax pages={5}>
       <ParallaxLayer offset={0} speed={1.5} className='backgroundLayer'/>
       <ParallaxLayer offset={0} speed={0.8}>
         <Landing/>
@@ -140,13 +140,6 @@ function App() {
 
         <ParallaxLayer  offset={4} speed={1}>
           <SkillSet/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={5} speed={1}>
-          <div className='divHola'>
-            <h2 >HOLA MUNDO</h2>
-            <h3>ESTO ES UNA PRUEBITA</h3>
-          </div>
         </ParallaxLayer>
         
     </Parallax>
