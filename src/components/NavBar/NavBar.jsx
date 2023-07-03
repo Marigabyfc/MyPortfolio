@@ -38,11 +38,9 @@ export default function NavBar({lan}) {
       </figure>
         <ul  className={`${Style.ulNavBar} ${open ? Style.active : null}` }>
           <li id={firstInView ? Style.li1 : ''}>
-            { lan ? <a href='#home' onClick={click}>
+            <a href='#home' onClick={click}>
               Home
-            </a> : <a href='#home' onClick={click}>
-              Inicio
-            </a>}
+            </a>
           </li>
             <hr />
           <li id={firstInView ? Style.li2 : ''}>
