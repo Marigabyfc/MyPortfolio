@@ -10,7 +10,7 @@ export default function Landing() {
   
   const handleDownload = () => {
     // Lógica para generar o obtener la URL del archivo PDF
-    const fileUrl = 'https://drive.google.com/file/d/1KoxlXBd4_5-Upqj82CEc574p9u9FmngA/view?usp=sharing';
+    const fileUrl = 'https://drive.google.com/file/d/1ogwEEIL-S9s3Le0V2VHAgYx87PozEdtC/view?usp=sharing';
 
     // Crea un enlace temporal y dispara la descarga
     const link = document.createElement('a');
