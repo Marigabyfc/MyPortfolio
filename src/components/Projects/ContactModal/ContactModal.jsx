@@ -125,8 +125,8 @@ export default function ContactModal({open, closeModal}) {
                     <p>Hi! it's a pleasure to have you here at this stage of my portfolio. We can get in touch by leaving your contact information and message, which will be sent to my email. I'll be happy to respond.</p>
                 </div>
             </div>
-        </section>
           <button onClick={closeModal}>X</button>
+        </section>
      </article> 
   )
 }
